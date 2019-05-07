@@ -1,0 +1,111 @@
+{
+  "pages": [
+    "pages/index/index",
+
+    "pages/merchant/index",
+    "pages/merchant/home/index",
+    "pages/merchant/service/index",
+    "pages/merchant/demand/index",
+
+    "pages/my/index/index",
+    "pages/my/company/info/index",
+
+    "pages/my/personal/info/index",
+    "pages/my/personal/authentication/index",
+    "pages/my/personal/entry/index",
+    
+    "pages/my/about/index",
+    "pages/my/about/detail/index",
+
+    "pages/my/integral/index",
+    "pages/my/integral/recording/index",
+
+    "pages/my/setting/index",
+    "pages/my/setting/feedback/index",
+    "pages/my/setting/bind_mobile/index",
+    "pages/my/setting/bind_wechat/index",
+
+    "pages/my/shop/index",
+    "pages/my/shop/create/index",
+    "pages/my/shop/prompt/index",
+
+    "pages/my/service/index",
+    "pages/my/service/create/index",
+
+    "pages/my/demand/index",
+    "pages/my/demand/create/index",
+
+    "pages/my/help/index",
+
+    "pages/my/collection/index",
+
+    "pages/my/carte/index",
+    "pages/my/carte/create/index",
+    "pages/my/carte/detail/index",
+    "pages/my/carte/my_attention/index",
+    "pages/my/plaza/index",
+
+    "pages/my/welfare/index",
+
+    "pages/my/member/index",
+    "pages/my/member/office/index",
+
+    "pages/my/browse/index",
+
+    "pages/my/care/index",
+    "pages/my/care/prompt/index",
+
+    "pages/square/index",
+    
+    "pages/search/index",
+
+    "pages/passport/login/index",
+    "pages/passport/register/index",
+    "pages/passport/personal/index",
+    "pages/passport/company/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "开平协会",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#78c4fe",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-action.png"
+      },
+      {
+        "text": "商户",
+        "pagePath": "pages/merchant/index",
+        "iconPath": "images/college.png",
+        "selectedIconPath": "images/college-action.png"
+      },
+      {
+        "text": "供需",
+        "pagePath": "pages/square/index",
+        "iconPath": "images/fenlei.png",
+        "selectedIconPath": "images/fenlei-action.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/index/index",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-action.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

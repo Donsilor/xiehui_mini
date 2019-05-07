@@ -1,0 +1,14 @@
+<view class='container'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form'>
+        <view class='section_li'>
+            <span>*</span>微信：
+            <input placeholder="请输入微信号" name="wx" value="{{userInfo.wechat_number}}" />
+        </view>
+    </view>
+
+    <view class='submit'>
+        <button formType="submit">保存</button>
+    </view>
+    </form>
+</view>

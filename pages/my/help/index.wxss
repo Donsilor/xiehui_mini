@@ -1,0 +1,75 @@
+/* pages/my/help/index.wxss */
+.wenda {
+    margin: 0 20rpx;
+}
+
+.wenda .tit {
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 32rpx;
+}
+
+.wenda .tit span {
+    float: right;
+    font-size: 24rpx;
+    color: #777;
+}
+
+.wenda .box {
+    height: auto;
+    min-height: 90rpx;
+    border-bottom: 1px solid #eee;
+}
+
+.wenda .box .sub-tit-box {
+    line-height: 90rpx;
+    height: 90rpx;
+}
+
+.wenda .box .sub-tit-box .xuhao {
+    float: left;
+    height: 90rpx;
+    position: relative;
+}
+
+.wenda .box .sub-tit-box .xuhao image {
+    width: 34rpx;
+    height: 33rpx;
+    float: left;
+    padding-top: 34rpx;
+}
+
+.wenda .box .sub-tit-box .xuhao .num {
+    color: #fff;
+    position: absolute;
+    left: 2px;
+    font-size: 24rpx;
+}
+
+.wenda .box .sub-tit-box .tit-li {
+    margin-left: 16rpx;
+    font-size: 30rpx;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.wenda .box .sub-tit-box .iconfont {
+    font-size: 26rpx;
+}
+
+
+.answer-box {
+    color: #777;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+
+}
+.answer-box .spread {
+    color: #777;
+    font-size: 28rpx;
+    margin: 0;
+
+}

@@ -1,0 +1,6 @@
+/* pages/my/about/detail/index.wxss */
+@import "/utils/wxParse/wxParse.wxss";
+.main_p40{ padding:0 50rpx;}
+.top{ width: 100%; font-size: 34rpx; line-height:50rpx;}
+.top .time{ font-size:24rpx; color: #aaa; }
+.main_p40 .text{ font-size: 34rpx; line-height: 50rpx;}

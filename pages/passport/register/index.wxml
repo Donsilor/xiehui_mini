@@ -1,0 +1,51 @@
+<view class='container'>
+  <view class='tit'>选择会员类型</view>
+
+  <view class='box'>
+    <image src='/images/1.png'></image>
+    <view class='content'>
+      <h3>经纪人</h3>
+      <text class='dec'>我是房地产租、售高手我怕谁</text>
+      <navigator url='../personal/index' class='btn btn-left'>会员说明</navigator>
+      <view  class='btn btn-right' data-type="1" bindtap="navigateTo">立即注册</view>
+    </view>
+  </view>
+  <view class='box'>
+    <image src='/images/2.png'></image>
+    <view class='content'>
+      <h3>招商经理</h3>
+      <text class='dec'>天下房源我发布</text>
+      <navigator url='../personal/index' class='btn btn-left'>会员说明</navigator>
+      <view  class='btn btn-right' data-type="2" bindtap="navigateTo">立即注册</view>
+    </view>
+  </view>
+  <view class='box'>
+    <image src='/images/3.png'></image>
+    <view class='content'>
+      <h3>中介公司</h3>
+      <text class='dec'>我有经纪人专属管理后台哦</text>
+      <navigator url='../personal/index' class='btn btn-left'>会员说明</navigator>
+      <view  class='btn btn-right' data-type="3" bindtap="navigateTo">立即注册</view>
+    </view>
+  </view>
+  <view class='box'>
+    <image src='/images/4.png'></image>
+    <view class='content'>
+      <h3>代理公司/包租公司</h3>
+      <text class='dec'>有楼盘项目的客官请进哦</text>
+      <navigator url='../personal/index' class='btn btn-left'>会员说明</navigator>
+      <view  class='btn btn-right' data-type="4" bindtap="navigateTo">立即注册</view>
+    </view>
+  </view>
+  <view class='box'>
+    <image src='/images/5.png'></image>
+    <view class='content'>
+      <h3>开发商</h3>
+      <text class='dec'>寻找楼盘分销的在这里注册哦</text>
+      <navigator url='../personal/index' class='btn btn-left'>会员说明</navigator>
+      <view  class='btn btn-right' data-type="5" bindtap="navigateTo">立即注册</view>
+    </view>
+  </view>
+
+
+</view>

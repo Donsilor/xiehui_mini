@@ -1,0 +1,52 @@
+<!--pages/shop/index.wxml-->
+<view class='header'>
+  <view class="back">
+    <i class="icon iconfont icondizhi1"></i>
+    {{city}}
+  </view>
+  <view class="search">
+    <view class="search_n">
+      <form bindsubmit="searchSubmit">
+        <view class="text_box">
+          <input id="keyword" name="keyword" bindfocus='goSearch'  type="text" placeholder="搜索" class="keyword text"></input>
+        </view>
+
+      </form>
+    </view>
+  </view>
+
+</view>
+<view class='ad01'>
+  <image src='../../images/shop01.jpg' mode='widthFix'></image>
+</view>
+<view class="scroll_box">
+  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+
+    <view class="item_list {{enter_type==0?'active':''}}" bindtap='changeEnterType' data-id='0'>
+      <view class="item_book_text">全部分类</view>
+    </view>
+    <block wx:for='{{enter_type_arr}}' wx:key='item'>
+      <view class="item_list {{enter_type==item.id?'active':''}}" bindtap='changeEnterType' data-id='{{item.id}}'>
+        <view class="item_book_text">{{item.name}}</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<view class='main_p40'>
+  <view class='box_c'>
+    <scroll-view scroll-top="{{shopScrollTop}}" scroll-y="true" style="white-space:nowrap;height:{{scrollHeight + 500}}rpx;" class="list" bindscrolltolower="shopBindDownLoad"  bindscroll="shopScroll">
+      <block wx:for='{{shopList}}' wx:key='item'>
+        <view class='box' bindtap='gotoHome' data-id='{{item.id}}'>
+          <view class='img'>
+            <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
+          </view>
+          <view class='tit_des'>
+            <view class='tit'>{{item.shop_name}}</view>
+            <view class='des'>{{item.content}}</view>
+            <view class='other'><span>{{item.business_distance}}</span>{{item.address_name}} | {{item.enter_name}}</view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

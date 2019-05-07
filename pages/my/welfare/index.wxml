@@ -1,0 +1,50 @@
+<!--pages/my/welfare/index.wxml-->
+<!--index.wxml-->
+<view class='main'>
+  <view class='cantent'>    
+    <view class='top'>
+      <view class='img'>
+        <image src='{{ResourceRootUrl}}{{member.avatar}}'></image>
+      </view>
+      <view class='user'>
+        <view class='name'>{{member.nickname}}<i>{{member.type_name}}</i></view>
+        <view class='mo' wx:if="{{member.office_id}}">{{member.office_name}}</view>
+        <view class='qi' wx:if="{{member.end_time}}">{{member.end_time}}</view>
+      </view>
+      <view class='xu' bindtap='goPage' wx:if="{{member.type == 1}}">加入会员</view>
+      <view class='xu' bindtap='goPage' wx:else>立即续费</view>
+    </view>
+    <view class='menu'>
+      <view class='z'>专属4大特权</view>
+      <view class='en'>4 EXCLUSIVE PRIVILEGES</view>
+      <view class='quan'>
+        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view class='i1'>
+          <view>浔阳江头夜送客</view>
+          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+        </view>
+      </view>
+      <view class='quan'>
+        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view class='i1'>
+          <view>浔阳江头夜送客</view>
+          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+        </view>
+      </view>
+      <view class='quan'>
+        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view class='i1'>
+          <view>浔阳江头夜送客</view>
+          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+        </view>
+      </view>
+      <view class='quan'>
+        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view class='i1'>
+          <view>浔阳江头夜送客</view>
+          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

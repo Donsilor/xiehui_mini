@@ -1,0 +1,45 @@
+/* pages/my/member/office/index.wxss */
+.main { width: 750rpx; min-height: 1000rpx;  background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/hy_bg.jpg) no-repeat; background-size:100%;}
+.main .top{ font-size: 38rpx; color: #653f01; text-align: center; line-height: 80rpx; padding-top: 20rpx; }
+.main .vip{ width: 670rpx; height: 266rpx; border-radius: 10rpx; background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/vip_bg.jpg) no-repeat; background-size: 90%;           background-position: center;
+  margin: 20rpx auto;
+  padding:25rpx 0 0 80rpx;
+  font-size:30rex;color: #653f01; 
+  line-height: 80rpx;}
+.main .vip .money i{    
+  font-size: 70rpx;
+  font-weight: bold;
+}
+.main .vip .wei{  
+  font-size: 24rpx;
+  margin-left:40rpx; 
+  margin-top: -10rpx;
+}
+.main .check{
+  margin: 0 auto;
+  width: 85%;
+  height: 70rpx;
+  font-size: 30rpx;
+  /* border: 1rpx #eacf97 solid; */
+  border-radius: 20rpx;
+  box-shadow: 0 0 25rpx #e4e1df;
+  padding:30rpx 20rpx 0 20rpx;
+  color: #653f01;
+}
+.main .check .ic{
+  display: flex;
+  justify-content: space-between;
+}
+.main .pay{
+  width: 100%;
+  position: fixed;
+  bottom: 100rpx;
+  display: flex;
+  justify-content: center;  
+}
+.main .pay button{
+  width: 85%;
+  font-size: 36rpx;
+  background-color: #eacf97;
+  color: #653f01;  
+}

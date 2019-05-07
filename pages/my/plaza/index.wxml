@@ -1,0 +1,43 @@
+<!--pages/my/plaza/index.wxml-->
+<view class='main'>
+  <view class='top'>
+    <view class='btn'>
+      <button bindtap='goPage' data-url='../carte/index' >我的名片</button>
+      <button bindtap='goPage' data-url='../carte/my_attention/index'>我的关注</button>
+    </view>
+  </view>
+  <view class='tab'>
+    <view class='n' bindtap='defaultSort'>默认排序</view>
+    <view  class='n'>
+     <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range-key="name" value="{{multiIndex}}"  range="{{type_arr}}">
+                        {{industry_type_title}}<i class='icon iconfont iconxiala'></i>
+                    </picker>
+    </view>
+
+    
+    <view>
+
+    
+    <picker mode="multiSelector" bindchange="areaPickerChange" bindcolumnchange="areaPickerColumnChange" range-key="name" value="{{areaIndex}}"  range="{{area_arr}}">
+                        {{area_type_title}}<i class='icon iconfont iconxiala'></i>
+                    </picker>
+    </view>
+  </view>
+
+  <block wx:for="{{carteList}}" wx:key='item'>
+    <view class='content' bindtap='goPage' data-url='../carte/detail/index?id={{item.id}}'>
+      <view class='img'>
+        <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
+      </view>
+      <view class='text'>
+        <view class='t1'>{{item.name}}</view>
+        <view class='t2'>{{item.company_name}}</view>
+        <view class='t3'>
+          <view>{{item.position}}</view>
+          <view>{{item.attention_num}}人关注TA</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+

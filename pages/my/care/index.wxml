@@ -1,0 +1,32 @@
+<!--pages/my/care/index.wxml-->
+<view class="product-container">
+  <view class="product-list">
+    <view class="product-item" wx:for="{{attentionList}}" wx:for-index="index" wx:key="{{item}}">
+      <movable-area>
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+          inertia="true"
+          data-productIndex="{{index}}"
+          bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"
+          bindchange="handleMovableChange">
+
+          <view class="product-item-wrap"  bindtap='goDetail' data-url='../../merchant/home/index?id={{item.shop_id}}'>
+            <view class='shancont'>
+              <view class='content'>
+                <view class='img'>
+                  <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
+                </view>
+                <view class='text'>
+                  <view class='t1'>{{item.shop_name}}<i>公司</i></view>
+                  <view class='t2'>#{{item.enter_name}}</view>
+                  <view class='t3'><i>{{item.address_name}}</i><span>|</span>{{item.enter_name}}</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <view class="delete-btn" data-id="{{item.shop_id}}" data-uid='{{item.shop_uid}}' bindtap="performDelete">删除</view>
+    </view>
+  </view>
+</view>

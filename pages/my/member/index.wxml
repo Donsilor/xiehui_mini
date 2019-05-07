@@ -1,0 +1,57 @@
+<!--pages/my/member/index.wxml-->
+<view class='main'>
+   <view class='top'>
+     <view>开平协会</view>
+     <view>加入会员 享专属权利</view>
+   </view>
+   <view class='content'>
+    <view class="one {{memberType==2?'selected':''}}" bindtap='changeType' data-type='2'>
+      <view class='left1'>个人</view>
+      <view class='ctent'>个人会员</view>
+      <view class='money'>￥<i>{{member.money_one}}</i>元/年</view>
+      <view class='delmoney'>￥150</view>
+      <view class='wei'><i class='icon iconfont iconchangyonglogo28'></i>仅限微信支付</view>
+      <view class='right1'></view>
+    </view>
+    <view class="two {{memberType==3?'selected':''}}" bindtap='changeType' data-type='3'>
+      <view class='left2'>推荐</view>
+      <view class='ctent'>企业会员</view>
+      <view class='money'>￥<i>{{member.money_two}}</i>元/年</view>
+      <view class='delmoney'>￥800</view>
+      <view class='wei'><i class='icon iconfont iconchangyonglogo28'></i>仅限微信支付</view>
+    </view>
+    <view class='btn' bindtap='join'>
+      <button wx:if="{{member.type == memberType}}">立即续费</button>
+      <button wx:else>立即加入</button>
+    </view>
+   </view>
+   <view class='zhuan'>
+    <view class='te'>专属特权</view>
+    <view class='category'>      
+      <view class='icon'>        
+        <view class='right'>多需求</view>        
+        <i>
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/vip_icon1.png'></image>
+        </i>10条/天
+      </view>
+      <view class='icon'>
+        <view class='right1'></view>        
+        <i>
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/vip_icon2.png'></image>
+        </i>赠积分
+      </view>
+      <view  class='icon'>
+        <view class='right'>翻倍</view>
+        <i>
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/vip_icon3.png'></image>
+        </i>积分翻倍
+      </view>
+      <view  class='icon'>    
+        <view class='right1'></view>        
+        <i>
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/vip_icon4.png'></image>
+        </i>企业标识
+      </view>
+    </view>
+   </view>
+</view>

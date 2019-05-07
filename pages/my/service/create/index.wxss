@@ -1,0 +1,177 @@
+/* pages/my/service/create/index.wxss */
+.main{
+  width: 750rpx;
+  min-height: 1000rpx;
+  background-color: #f5f5f5;
+}
+.main .fu{
+  width: 680rpx;
+  height: 270rpx;
+  background: #fff;
+  margin-top:20rpx;
+  font-size: 34rpx;
+  color: #333;
+  padding: 40rpx;
+}
+.main .fu .fu1 i{
+  font-size: 26rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+.main .fu image{
+  width: 116rpx;
+  height: 116rpx;
+  display: flex;
+  /* justify-content: space-around;
+   */
+}
+.main .fu .img{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.main .fu .img .imgs{
+  width: 116rpx;
+  height: 116rpx;
+  margin: 40rpx 40rpx 0 0;
+  position: relative;
+}
+.main .fu .img .imgs i{
+  z-index: 1;
+  position: absolute;
+  right: -16rpx;
+  top: -16rpx;
+}
+.main .jie{
+  width: 680rpx;
+  height: 670rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  font-size: 34rpx;
+  color: #000;
+  padding: 40rpx;
+  overflow: hidden; 
+}
+.main .jie .name1{
+  width: 670rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #f5f5f5; 
+  padding-bottom:20rpx;
+}
+.main .jie .name1 input .placeholderStyle{
+  font-size: 34rpx;
+  color: #bfbfbf;
+}
+.main .jie .name2{
+  width: 670rpx;
+  padding: 20rpx 0;
+}
+.main .jie textarea{
+  width: 630rpx;
+  height: 284rpx;
+  border: 1rpx solid #f5f5f5;
+  margin-top:20rpx;
+  padding: 20rpx; 
+}
+.main .jie textarea .placeholderStyle{
+  font-size:34rpx;
+  color:#bfbfbf;
+  
+}
+.main .jie image{
+  width: 116rpx;
+  height: 116rpx;
+  display: flex;
+}
+.main .jie .img{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.main .jie .img .imgs{
+  width: 116rpx;
+  height: 116rpx;
+  margin: 40rpx 40rpx 0 0;
+  position: relative;
+}
+.main .jie .img .imgs i{
+  z-index: 1;
+  position: absolute;
+  right: -16rpx;
+  top: -16rpx;
+}
+.main .check{
+  width: 750rpx;
+  height: 180rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 34rpx;
+  color: #000;
+}
+.main .check .in{
+  width: 750rpx;
+  height: 52rpx;
+  display: flex;
+  margin: 0 auto;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f5f5f5;  
+} 
+.main .check .right{
+  width: 249rpx;
+  font-size: 34rpx;
+  color:#000;
+}
+.main .check .in .inright{
+  font-size: 32rpx;
+  color: #bfbfbf;
+}
+.main .check .in .inright .placeholderStyle{
+  font-size: 32rpx;
+  color: #bfbfbf;
+}
+.main .check .in .inright i{
+  position: absolute;
+  right: 20rpx;
+}
+.main .contact{
+  width: 750rpx;
+  height: 180rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 34rpx;
+  color: #000;
+}
+.main .contact .in{
+  width: 750rpx;
+  height: 52rpx;
+  display: flex;
+  margin: 0 auto;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+
+} 
+.main .contact .right{
+  width: 249rpx;
+  font-size: 34rpx;
+  color:#000;
+}
+.main .contact .in .inright{
+  font-size: 32rpx;
+  color: #bfbfbf;
+}
+.main .contact .in .inright .placeholderStyle{
+  font-size: 32rpx;
+  color: #bfbfbf;
+}
+.main .contact .in .inright i{
+  position: absolute;
+  right: 20rpx;
+}
+.main .btn {
+  padding: 82rpx 0;
+}
+.main .btn button{
+  width: 85%;
+  font-size: 36rpx;
+  background-color: #43b1f4;
+  color: #fff;  
+} 

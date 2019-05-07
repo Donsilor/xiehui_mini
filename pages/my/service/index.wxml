@@ -1,0 +1,49 @@
+<view class="product-container" hidden='{{main_hidden}}'>
+  <view class="product-list">
+    <view class="product-item" wx:for="{{serviceList}}" wx:for-index="index" wx:key="{{item}}">
+      <movable-area>
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+          inertia="true"
+          data-productIndex="{{index}}"
+          bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"
+          bindchange="handleMovableChange">
+
+          <view class="product-item-wrap">
+            <view class='shancont'>
+              <view class='content'  bindtap='goDetail' data-id='{{item.id}}'>
+                <view class='img'>
+                  <image src='{{ResourceRootUrl}}{{item.image_url}}'></image>
+                </view>
+                <view class='text'>
+                  <view class='t1'>{{item.title}}</view>
+                  <view class='t2'>#{{item.industry_name}}</view>
+                  <view class='t3'>{{item.shop_name}}</view>
+                </view>
+              </view>
+              <view class='bt'>
+                <view class='btn1' bindtap='goCreate'  data-url='create/index?id={{item.id}}'  ><view>编辑</view></view> 
+                <view class='btn2'>
+                  <view wx:if="{{item.status == 1}}" bindtap='changeStatus' data-index='{{index}}' data-status='2' data-id='{{item.id}}'>下架</view>
+                  <view wx:if="{{item.status == 2}}" bindtap='changeStatus' data-index='{{index}}'  data-status='1' data-id='{{item.id}}'>上架</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <view class="delete-btn"  data-id="{{item.id}}" data-index='{{index}}' bindtap="performDelete" >删除</view>
+    </view>
+  </view>
+</view>
+
+<view class='no-main' hidden='{{no_hidden}}'>
+  <view class='top'>
+    <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+    <view>您还没有发布过服务</view>
+  </view>
+  <view class='btn' >
+    <button wx:if='{{phone}}' bindtap='goCreate' data-url='create/index'  >发布服务</button>
+    <button wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"  >发布服务</button>
+  </view>
+</view>

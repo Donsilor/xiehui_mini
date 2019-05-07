@@ -1,0 +1,20 @@
+<!--pages/my/about/index.wxml-->
+<view class='about' style='background: url(../../../images/about01.jpg );background-size: 100%;'>
+  <view class='tit'>开平协会</view>
+  <view class='des'>深圳市深蓝互联科技有限公司是专注于软件外包服务的专业性开发公司，我们专注的领域包含网站建设、系统平台开发、APP开发、小程序制作、PC软件开发。我们团队有丰富的开发经验，</view>
+  <view class='more'>了解更多</view>
+</view>
+<view class='main_p40'>
+  <view class='tit_h2'>协会动态</view>
+  <view class='box_c'>
+  <block wx:for="{{aboutList}}">
+      <view class='box' bindtap='gotodetail' data-id='{{item.id}}'>
+        <view class='img'><image src='{{item.url}}' /></view>
+        <view class='tit_des'>
+          <view class='tit'>{{item.title}}</view>
+          <view class='des'>{{item.content}}</view>
+        </view>
+      </view>
+    </block>  
+  </view>
+</view>

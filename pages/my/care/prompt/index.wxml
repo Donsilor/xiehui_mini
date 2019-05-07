@@ -1,0 +1,17 @@
+<!--pages/my/care/prompt/index.wxml-->
+<view class='main'>
+  <view class='new'>
+    <view class='n1'></view>
+    <view class='content'>
+      <view>
+        <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+      </view>
+      <view class='text'>您还没有关注过店铺</view>
+    </view>
+    <view class='btn'>
+      <button bindtap='goPage'>去商户平台</button>
+    </view>
+  </view>     
+</view>
+
+

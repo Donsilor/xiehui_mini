@@ -1,0 +1,37 @@
+<!--pages/my/carte/my_attention/index.wxml-->
+<view class='main' hidden='{{is_hidden}}'>
+  <view class='new'>
+    <view class='n1'>共关注名片{{count}}张</view>
+    <block wx:for="{{attentionList}}" wx:key='item'>
+      <view class='newcontent' bindtap='goPage' data-url='../detail/index?id={{item.carte_id}}'>
+        <view class='img'>
+          <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
+        </view>
+        <view class='text'>
+          <view class='t1'>{{item.name}}</view>
+          <view class='t2'>{{item.company_name}}</view>
+          <view class='t3'>
+            <view>{{item.position}}</view>
+            <view>{{item.attention_num}}人关注TA</view>
+          </view>
+        </view>
+      </view>
+    </block>  
+  </view>
+</view>
+
+<view class='no-main' hidden='{{no_hidden}}'>
+  <view class='new'>
+    <view class='n1'></view>
+    <view class='content'>
+      <view>
+        <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+      </view>
+      <view class='text'>您还没有关注过名片</view>
+    </view>
+    <view class='btn'>
+      <button bindtap='goPage'  data-url='../../plaza/index'>去名片广场</button>
+    </view>
+  </view>     
+</view>
+

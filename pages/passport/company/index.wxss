@@ -1,0 +1,125 @@
+.container {
+    padding-bottom: 1rem;
+}
+
+.container .section_li {
+    padding: 0 20rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+
+.container .section_li span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.container .section_li .yzm {
+    font-size: 24rpx;
+    border: 2rpx solid red;
+    border-radius: 8rpx;
+    padding: 4rpx 10rpx;
+}
+
+.container .section_li input {
+    float: right;
+    height: 90rpx;
+    width: 490rpx;
+    display: inline-block;
+    font-size: 28rpx;
+    text-align: right;
+    font-weight: 400;
+}
+
+.container .section_li .input-placeholder {
+    color: #999;
+}
+
+.container .section_idcard {
+    padding: 0 20rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.container .section_idcard span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.container .section_idcard .idcard_img {
+    width: 100%;
+}
+
+.container .section_idcard .idcard_img .front, .section_idcard .idcard_img .opposite {
+    float: left;
+    width: 290rpx;
+    height: 162rpx;
+    background-color: #eee;
+    margin: 0 30rpx;
+    text-align: center;
+    line-height: 162rpx;
+}
+
+.container .section_businesslicense {
+    padding: 0 20rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.container .section_businesslicense span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.section_businesslicense .businesslicense_img view {
+    width: 290rpx;
+    height: 162rpx;
+    background-color: #eee;
+    margin: 0 30rpx;
+    text-align: center;
+    line-height: 162rpx;
+}
+
+.container .section_authorization {
+    padding: 0 20rpx;
+    line-height: 90rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    margin-bottom: 20rpx;
+}
+
+.container .section_authorization span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.section_authorization .authorization_img view {
+    width: 290rpx;
+    height: 162rpx;
+    background-color: #eee;
+    margin: 0 30rpx;
+    text-align: center;
+    line-height: 162rpx;
+}
+
+
+.submit {
+    width: 100%;
+    margin-top: 80rpx;
+}
+
+.submit button {
+    width: 60%;
+    border: none;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #e46804;
+    color: #fff;
+}

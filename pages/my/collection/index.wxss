@@ -1,0 +1,331 @@
+/* pages/my/collection/index.wxss */
+.about_page{
+  margin: 0 20rpx;
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    height: 60rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    color: #353535;
+    font-size: 30rpx;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#353535;    
+}
+.active{
+    font-size: 30rpx;
+    background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/active.jpg) no-repeat center bottom ;background-size: 60rpx auto;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 20rpx;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/* --------------需求css ------------*/
+.need .product-list .product-item {
+  position: relative;
+  width: 100vw;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+  margin-top: 20rpx;
+  
+}
+
+.need .slide-product-list .slide-product-item {
+  position: relative;
+  width: 100vw;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+}
+
+.need .product-list .product-item movable-area {
+  height: 222rpx;
+  width: calc(100vw - 120rpx);
+}
+
+.need .product-list .product-item movable-view {
+  height: 222rpx;
+  width: 100vw;
+  background: #fff;
+  z-index: 999;
+}
+
+.need .product-list .product-item .delete-btn {
+  width: 150rpx;
+  height: 219rpx;
+  background-color: #f96363;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.need .product-list .product-item-wrap {
+  width: 100%;
+  height: 222rpx;
+  background: #fff;
+  line-height: 60rpx;
+  position: relative; 
+}
+
+.need .product-list .product-item-wrap .content {
+  flex: 1;
+  overflow: hidden;
+  padding: 40rpx;
+}
+
+.need .product-list .product-item-wrap .names {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 60rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.need .product-list .product-item-wrap .date {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.need .product-list .product-item-wrap .date img{
+  width: 37rpx;
+  height: 37rpx;
+}
+
+.need .product-list .product-item-wrap .date image{
+  width: 37rpx;
+  height: 37rpx;  
+  box-shadow: 0 0 10rpx #969AA3;
+  border-radius: 90rpx;
+}
+
+.need .product-list .product-item-wrap .date span{
+  margin-left: 10rpx;
+}
+
+.need .product-list .product-item-wrap .text {
+  display: flex;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.need .product-list .product-item-wrap .text .ct{
+  margin-left: 35rpx;
+}
+
+.need .product-list .product-item-wrap .product-movable-item-amount {
+  flex: 0 0 auto;
+  padding-right: 80rpx;
+  position: relative;
+}
+
+.need .product-list .product-item-wrap .product-movable-item-amount .amount {
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #383A3D;
+  line-height: 60rpx;
+}
+
+.need .product-list .product-item-wrap .product-movable-item-amount .unit {
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  font-size: 28rpx;
+  color: #969AA3;
+  line-height: 60rpx;
+}
+/*-------------------- 服务css------------------- */
+.release .product-list {
+  background: #f5f5f5;
+  /* min-height: 1000rpx; */
+}
+
+.release .product-list .product-item {
+  position: relative;
+  width: 100vw;
+  /* border-bottom: 2rpx solid #E9E9E9; */
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+  margin-top: 20rpx;
+  
+}
+
+.release .slide-product-list .slide-product-item {
+  position: relative;
+  width: 100vw;
+  /* border-bottom: 2rpx solid #E9E9E9; */
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 999;
+}
+
+.release .product-list .product-item movable-area {
+  height: 350rpx;
+  width: calc(100vw - 120rpx);
+}
+
+.release .product-list .product-item movable-view {
+  height: 350rpx;
+  width: 100vw;
+  background: #fff;
+  z-index: 999;
+}
+
+.release .product-list .product-item .delete-btn {
+  width: 150rpx;
+  height: 350rpx;
+  background: #f96363;
+  color:#fff;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.release .product-list .product-item-wrap {
+  width: 100%;
+  height: 350rpx;
+  background: #fff;
+  line-height: 40rpx;
+  /* margin-top: 30rpx; */
+  position: relative; 
+}
+
+.release .product-list .product-item-wrap .shancont .content {
+  flex: 1;
+  overflow: hidden;
+  padding: 40rpx;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.release .product-list .product-item-wrap .img image{
+  width: 125rpx;
+  height: 125rpx;
+}
+
+.release .product-list .product-item-wrap .text {
+  margin-left: 20rpx; 
+  display: flex;
+  flex-direction: column;
+}
+
+.release .product-list .product-item-wrap .text .t1{
+  font-size: 28rpx;
+  color: #333;
+}
+
+.release .product-list .product-item-wrap .text .t2{
+  font-size: 24rpx;
+  color: #43b1f4;
+}
+
+.release .product-list .product-item-wrap .text .t3{
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .product-list .product-item-wrap .date {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .product-list .product-item-wrap .date i{
+  width: 81rpx;
+  height: 31rpx;
+  border:1rpx #43b1f4 solid;
+  font-size: 22rpx;
+  border-radius: 90rpx;
+  color: #43b1f4;
+  margin-left: 2%;
+}
+
+.release .product-list .product-item-wrap .text {
+  display: flex;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .product-list .product-item-wrap .text .ct{
+  margin-left: 35rpx;
+}
+
+.release .product-list .product-item-wrap .bt{
+  display: flex;
+  position: absolute;
+  right: 40rpx;
+  text-align: center;
+}
+
+.release .product-list .product-item-wrap .bt view{
+  width: 140rpx;
+  height: 42rpx;
+  border-radius: 25rpx;
+  font-size: 26rpx; 
+  padding-top: 10rpx;
+}
+
+.release .product-list .product-item-wrap .btn1 view{
+  color: #43b1f4;
+  background: #fff;
+  border: 1rpx solid #43b1f4; 
+}
+
+.release .product-list .product-item-wrap .btn2 view{
+  color: #fff;
+  background: #43b1f4;
+  border: 1rpx solid #fff;
+  margin-left: 20rpx;
+}
+
+.release .product-list .product-item-wrap .product-movable-item-amount {
+  flex: 0 0 auto;
+  padding-right: 80rpx;
+  position: relative;
+}
+
+.release .product-list .product-item-wrap .product-movable-item-amount .amount {
+  width: 120rpx;
+  font-size: 28rpx;
+  color: #383A3D;
+  line-height: 40rpx;
+}
+
+.release .product-list .product-item-wrap .product-movable-item-amount .unit {
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  font-size: 28rpx;
+  color: #969AA3;
+  line-height: 40rpx;
+}

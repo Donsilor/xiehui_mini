@@ -1,0 +1,46 @@
+<!--pages/personalCenter/certification/index.wxml-->
+
+<view class='container'>
+    <view class='form'>
+        <view class='section_li'>
+            <view class="left-box">姓名</view>
+            <view class="right-box">{{userApplyInfo.name}}</view>
+        </view>
+        <view class='section_li'>
+            <view class="left-box">手机号</view>
+            <view class="right-box">{{userApplyInfo.mobile}}</view>
+        </view>
+        <view class='section_li'>
+            <view class="left-box">身份证号</view>
+            <view class="right-box">{{userApplyInfo.sfz_number}}</view>
+        </view>
+        <view class='section_li'>
+            <view class="left-box">详细地址</view>
+            <view class="right-box">{{userApplyInfo.address}}</view>
+        </view>
+    </view>
+
+    <view class='section_img'>
+        <span>*</span>身份证照：
+        <view class='upload_image idcard'>
+            <view class=''>
+                <span></span>
+                <image src='{{ResourceRootUrl}}{{userApplyInfo.sfz_z}}'></image>
+            </view>
+            <view class=''>
+                <span></span>
+                <image src='{{ResourceRootUrl}}{{userApplyInfo.sfz_f}}'></image>
+            </view>
+        </view>
+    </view>
+
+    <view class='section_img'>
+        手持身份证照：
+        <view class='upload_image'>
+            <view>
+                <span></span>
+                <image src="{{ResourceRootUrl}}{{userApplyInfo.sfz_sc}}"></image>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class='user_m'>
+  <view class='box'>
+    <view class='top'>
+      <view class='l'>
+        <image src='{{ResourceRootUrl}}{{userInfo.avatar}}'></image>
+      </view>
+      <view class='m'>
+        <view class='name'>{{userInfo.nickname}}<span>{{userInfo.type_name}}</span></view>
+        <button class='tel' size='mini' wx:if='{{userInfo.mobile}}'>{{userInfo.mobile}}</button>
+        <button class='tel' size='mini' open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber" wx:else>点击获取手机号</button>
+        <!-- <view class='tel' >18617176326</view> -->
+        <!-- <view class='tel'>
+          <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+            点击绑定手机号
+          </button> 
+        </view> -->
+      </view>
+      <view class='r'>
+        <view wx:if="{{userInfo.type == 1}}"  bindtap='goOtherPage' data-url='../member/index'>加入会员</view>
+        <view wx:else  bindtap='goOtherPage' data-url='../welfare/index'>续费会员</view>
+      </view>
+    </view>
+    <view class='num'>
+      <view class='li' bindtap='goOtherPage' data-url='../integral/index'>
+        <view class='n'>{{userInfo.integral_num}}</view>
+        <span>积分</span>
+      </view>
+      <view class='li' bindtap='goOtherPage' data-url='../care/index'>
+        <view class='n'>{{userInfo.attention_num}}</view>
+        <span>关注</span>
+      </view>
+      <view class='li' bindtap='goOtherPage' data-url='../browse/index'>
+        <view class='n' wx:if="{{userInfo.browse_num > 99}}">99+</view>
+        <view class='n' wx:else>{{userInfo.browse_num}}</view>
+        <span>浏览</span>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='my_icon'>
+   <view class='li'>
+        <view class='n'  bindtap='goPage' data-url='../carte/index'><image src='http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/icon_my01.png'></image></view>
+        <span>我的名片</span>
+      </view>
+      <view class='li' bindtap='goPage'  data-url='../plaza/index'>
+        <view class='n'><image src='http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/icon_my02.png'></image></view>
+        <span>名片广场</span>
+      </view>
+      <view class='li' bindtap='goPage'  data-url='../service/index'>
+        <view class='n'><image src='http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/icon_my03.png'></image></view>
+        <span>我的服务</span>
+      </view>
+      <view class='li' bindtap='goPage' data-type='2' data-url='../shop/index'>
+        <view class='n'><image src='http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/icon_my04.png'></image></view>
+        <span>店铺管理</span>
+      </view>
+</view>
+<view class='main'>
+   <view class='li'>
+     <view hover-class="none" bindtap='goOtherPage' data-url='../demand/index'>
+        <i class='icon iconfont icon16' ></i> 我的需求
+     </view>
+   </view>
+   <view class='li'>
+     <view hover-class="none" bindtap='goOtherPage' data-url='../collection/index'>
+        <i class='icon iconfont icon4'></i> 我的收藏
+     </view>
+   </view>
+   <view class='li'>
+     <view hover-class="none" bindtap='goOtherPage' data-url='../welfare/index'>
+        <i class='icon iconfont iconxiaofeirenzheng'></i> 会员福利
+     </view>
+   </view>
+   <view class='li'>
+     <view hover-class="none" bindtap='goOtherPage' data-url='../help/index'>
+        <i class='icon iconfont iconbangzhuzhongxin'></i> 常见问题
+     </view>
+   </view>
+</view>

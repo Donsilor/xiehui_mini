@@ -1,0 +1,101 @@
+<view  class='main'>
+  <view class='top'>
+     <view class='up' bindtap="UploadImage" data-image-type="logo">
+      <image src='{{ResourceRootUrl}}{{previewImages.logo_images}}' wx:if='{{previewImages.logo_images}}'></image>
+      <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png' wx:else></image>    
+     </view>
+     <view>上传店铺LOGO</view>
+  </view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='input'>
+      <view class='in'>
+        <view class='right'>名称</view>
+        <view class='inright'>
+          <input name='shop_name'  value="{{shopArr.shop_name}}" placeholder='请输入店铺/公司名称'  placeholder-style='color:#999;font-size:34rpx'></input>
+        </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>入驻分类</view>
+        <view class="xuanze">
+            <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range-key="name" value="{{multiIndex}}"  range="{{type_arr}}">
+              <view class='inright'>{{enter_type_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+             </picker>
+        </view>
+      </view>
+      <view class='in' bindtap="getChooseLocation">
+        <view  class='right'>地址</view>
+        <view class="xuanze" >
+            <view class='inright'>{{current_address_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+        </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>联系人</view>
+        <view class='inright'>
+          <input  name="contact" value="{{shopArr.contact}}" placeholder='请输入联系人姓名' placeholder-style='color:#999;font-size:34rpx'></input>
+        </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>性别</view>
+        <view class='inright'>
+          <radio-group name="radio-group" bindchange="sexRadioChange">
+          <label>
+            <radio value="radio1" value="1" checked="{{shopArr.sex == 1 ? 'true' : ''}}" />
+            男
+          </label>
+          <label>
+            <radio value="radio2" value="2" checked="{{shopArr.sex == 2 ? 'true' : ''}}" />
+            女
+          </label>
+        </radio-group>
+        </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>联系电话</view>
+        <view class='inright'>
+          <input  name="phone" value="{{shopArr.phone}}" placeholder='请输入联系人电话' placeholder-style='color:#999;font-size:34rpx'></input>
+        </view>
+      </view>
+    </view>
+    <view class='scroll'>
+      <view>店铺轮播图<i>(最多可上传五张)</i></view>
+      <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class='img'>
+            <view class='imgs'  bindtap="UploadImage" data-image-type="carousel">
+              <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image>
+            </view>
+            <block wx:for='{{previewImages.carousel_images}}' wx:key="imageKey" wx:for-index="imageKey" wx:for-item="imageInfo">
+              <view class='imgs'>
+                <image src='{{ResourceRootUrl}}{{imageInfo}}'></image>
+                <i class='icon iconfont icondelete' data-id="{{imageKey}}" bindtap="DeleteImage" data-image-type="carousel"></i>
+              </view>
+            </block>
+        </view>
+      </scroll-view>
+    </view>
+
+
+    <view class='jie'>
+      <view>店铺介绍</view>
+      <view>
+        <textarea name="content" value="{{shopArr.content}}"  placeholder='输入店铺介绍，可上传附加图片（最多五张）' placeholder-class='placeholderStyle'></textarea>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class='img'>
+        <view class='imgs' bindtap="UploadImage" data-image-type="content">
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image>
+        </view>
+         <block wx:for='{{previewImages.content_images}}' wx:key="imageKey" wx:for-index="imageKey" wx:for-item="imageInfo">
+          <view class='imgs'>
+            <image src='{{ResourceRootUrl}}{{imageInfo}}'></image>
+            <i class='icon iconfont icondelete' data-id="{{imageKey}}" bindtap="DeleteImage" data-image-type="content"></i>
+          </view>
+        </block>
+      </view>
+       </scroll-view>
+    </view>
+    <view class='btn'>
+      <button formType="submit" >创建店铺</button>
+    </view>
+   </form>
+</view>

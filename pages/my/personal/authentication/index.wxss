@@ -1,0 +1,69 @@
+/* pages/personalCenter/certification/index.wxss */
+
+.container .section_li {
+    padding: 0 20rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #eee;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+
+.section_li .left-box{
+    width: 30%;
+    float: left;
+}
+.section_li .right-box{
+    width: 70%;
+    float: right;
+    text-align: right;
+    color:#999999;
+}
+
+.container .section_li span {
+    font-size: 24rpx;
+    color: red;
+}
+
+.container .section_li .yzm {
+    font-size: 24rpx;
+    border: 2rpx solid red;
+    border-radius: 8rpx;
+    padding: 4rpx 10rpx;
+}
+
+.container .section_li input {
+    float: right;
+    height: 90rpx;
+    width: 490rpx;
+    display: inline-block;
+    font-size: 28rpx;
+    text-align: right;
+    font-weight: 400;
+}
+
+.container .section_li .input-placeholder {
+    color: #999;
+}
+
+.container .section_li .xuanze {
+    float: right;
+    font-size: 28rpx;
+    color: #999;
+}
+
+
+.submit {
+    width: 100%;
+    margin-top: 80rpx;
+}
+
+.submit button {
+    width: 60%;
+    border: none;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #e46804;
+    color: #fff;
+}

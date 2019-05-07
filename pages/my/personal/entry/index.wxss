@@ -1,0 +1,118 @@
+/* pages/workBench/reportManagement/selectHouse/index.wxss */
+.type_box {
+    margin-bottom: 30rpx;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.type_box span {
+    display: block;
+    width: 280rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    background-color: #dbdbdb;
+    color: #fff;
+    border-radius: 10rpx;
+}
+
+.type_box .on {
+    background-color: #fda214;
+}
+
+.search_box {
+    background-color: #fff;
+    padding-bottom: 30rpx;
+}
+
+.search {
+    width: 74%;
+    height: 70rpx;
+    background: #f2f2f2;
+    margin: 0 auto;
+}
+
+.search .text {
+    height: 70rpx;
+    line-height: 70rpx;
+    width: 400rpx;
+    display: inline-block;
+}
+
+.search .text input {
+    height: 70rpx;
+    padding-left: 20rpx;
+}
+
+.search .submit {
+    width: 100rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    background-color: #70c2f4;
+    color: #fff;
+    float: right;
+    text-align: center;
+}
+
+.select_box {
+    display: flex;
+    border: 1px solid #efefef;
+}
+
+.select_box .select_li {
+    background: #fff;
+    width: 33%;
+    position: relative;
+}
+
+.select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+}
+
+.select_text {
+    font-size: 30rpx;
+}
+
+.option_box {
+    position: absolute;
+    top: 90rpx;
+    width: 100%;
+    border: 1px solid #efefef;
+    box-sizing: border-box;
+    height: 0;
+    overflow-y: auto;
+    border-top: 0;
+    background: #fff;
+    transition: height 0.3s;
+    z-index: 999;
+}
+
+.option {
+    display: block;
+    box-sizing: border-box;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #efefef;
+    padding: 10rpx;
+    padding-left: 20rpx;
+}
+
+.item_box {
+    border-top: 10rpx solid #eee;
+    margin-bottom: 80rpx;
+}
+
+.item_box .item {
+    padding: 0 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #eee;
+}
+
+.item_box .item span {
+    float: right;
+}

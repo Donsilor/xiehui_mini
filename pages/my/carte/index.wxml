@@ -1,0 +1,72 @@
+<!--pages/my/carte/index.wxml-->
+<!--pages/mycard/index.wxml-->
+<view class='main' hidden='{{is_hidden}}'>
+  <view class='my' wx:if="{{detail.id}}">
+    <view class='top'>
+      <view>我的名片</view>
+      <view>关注数：{{detail.attention_num}}</view>
+    </view>   
+    <view class='content'>
+      <view class='img'>
+        <image src='{{ResourceRootUrl}}{{detail.logo}}'></image>
+      </view>
+      <view class='text' bindtap='goPage' data-url='detail/index?id={{detail.id}}'>
+        <view class='t1'>{{detail.name}}</view>
+        <view class='t1'>{{detail.company_name}}</view>
+        <view class='t1'>{{detail.position}}</view>
+        <view class='t2'><i class='icon iconfont iconphone_icon'></i>{{detail.phone}}</view>
+        <view class='t2'><i class='icon iconfont icondizhi2'></i>{{detail.address_title}}</view>
+      </view>
+    </view>
+    <view class='btn'>
+      <button class='btn1' open-type="share">分享名片</button>
+      <button class='btn2' bindtap='goPage' data-url='create/index?id={{detail.id}}' >编辑名片</button>
+    </view> 
+  </view>
+
+  <view class='mycard' wx:else >
+    <view class='m1'>我的名片</view>
+    <view class='content'>
+      <view>
+        <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+      </view>
+      <view class='text'>您还没有添加名片</view>
+    </view>
+    <view class='btn'>
+      <button wx:if='{{phone}}' bindtap='goPage' data-url='create/index'>新建我的名片</button>
+      <button wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" >新建我的名片</button>
+    </view>
+  </view> 
+
+  <view class='new' hidden='{{att_hidden}}' wx:if="{{attentionList.length > 0}}"  >
+      <view class='n1'>最近关注的名片</view>
+        <block wx:for="{{attentionList}}" wx:key="item">
+            <view class='newcontent' bindtap='goPage' data-url='detail/index?id={{item.carte_id}}'>
+              <view class='img'>
+                <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
+              </view>
+              <view class='text'>
+                <view class='t1'>{{item.name}}</view>
+                <view class='t2'>{{item.company_name}}</view>
+                <view class='t3'>
+                  <view>{{item.position}}</view>
+                  <view>{{item.attention_num}} 人关注TA</view>
+                </view>
+            </view>
+          </view>
+        </block>
+  </view>
+  <view class='mycard' hidden='{{att_hidden}}' wx:else >
+        <view class='m1'>最近关注的名片</view>
+        <view class='content'>
+          <view>
+            <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+          </view>
+          <view class='text'>还没有关注的名片</view>
+        </view>
+        <view class='btn'>
+          <button bindtap='goPage' data-url='../plaza/index'>去名片广场</button>
+        </view>
+      </view> 
+</view>
+

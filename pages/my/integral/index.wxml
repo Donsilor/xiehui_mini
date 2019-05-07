@@ -1,0 +1,41 @@
+<!--pages/my/integral/index.wxml-->
+<view class='main'>
+  <view class='top'>
+    <view class='img'>
+        <image src='{{ResourceRootUrl}}{{detail.avatar}}'></image>
+    </view>
+    <view class='user'>
+      <view>{{detail.nickname}}</view>
+      <view wx:if="{{detail.user_type == 1}}" bindtap='goPage' data-url='../member/index'>您还不是VIP会员，立即升级享受更多服务！</view>
+      <view wx:if="{{detail.user_type == 2}}" bindtap='goPage' data-url='../member/index'>您当前为{{detail.user_type_name}}，立即升级享受更多服务！</view>
+      <view wx:if="{{detail.user_type == 3}}" >您当前为尊贵的{{detail.user_type_name}}，享受着更多服务！</view>
+    </view>
+  </view>
+  <view class='myint'>
+    <view class='my'>我的店铺<i class='icon iconfont icongantanhao1'>积分规则</i></view>
+    <view class='money'>{{detail.total}}</view>
+    <view class='record' bindtap='goPage'  data-url='recording/index'>积分记录</view>
+  </view>
+  <view class='ren'>积分任务</view>
+  <view class='ji'>    
+    <view class='left'>
+      <i class='icon iconfont iconqiandao'></i>
+      <view class='left1'>
+        <view class='qian'>日常签到</view>
+        <view class='fen'>{{detail.checkIn_num}}积分</view>
+      </view>
+    </view>
+    <view class='yi' wx:if="{{checkInStatus}}">今日已签到</view>
+    <view class='yi' wx:else bindtap='checkIn'>签到</view>
+  </view>
+  <view class='ji'>    
+    <view class='left'>
+      <i class='icon iconfont iconqiandao'></i>
+      <view class='left1'>
+        <view class='qian'>日常分享</view>
+        <view class='fen'>{{detail.share_num}}积分</view>
+      </view>
+    </view>
+    <button class='share' open-type="share" >去分享<i class='icon iconfont iconarrow-right-copy'></i></button>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/personalCenter/certification/index.wxml-->
+
+<view class='container'>
+    <view class='form'>
+        <view class='section_li'>
+            <view class="left-box">昵称</view>
+            <view class="right-box">{{userInfo.nickname}}</view>
+        </view>
+        <view class='section_li'>
+            <view class="left-box">账号类型</view>
+            <view class="right-box">{{userInfo.type_name}}</view>
+        </view>
+    </view>
+</view>

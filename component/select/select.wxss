@@ -1,0 +1,35 @@
+/* componet/select/select.wxss */
+.select {
+    box-sizing:border-box;
+    width:100%;
+    height:90rpx;
+    line-height:90rpx;
+    text-align:center;
+}
+
+.select_text {
+    font-size: 30rpx;
+}
+
+.option_box {
+    position: absolute;
+    top: 90rpx;
+    width: 100%;
+    height: auto;
+    border: 1px solid #efefef;
+    box-sizing: border-box;
+    border-top: 0;
+    background: #fff;
+    transition: height 0.3s;
+    z-index: 999;
+}
+.option {
+    display: block;
+    box-sizing: border-box;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    border-bottom: 1px solid #efefef;
+    padding: 10rpx;
+    text-align:center;
+
+}

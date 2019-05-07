@@ -1,0 +1,49 @@
+<!--pages/my/Demand/create/index.wxml-->
+<view class='main'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='xu'>
+      <view class='name1'>
+      需求名称
+      <input placeholder='请输入需求标题'  name="title" value="{{DemandArr.title}}"  placeholder-class='placeholderStyle'>
+      </input>
+      </view>
+      <view class='name2'>需求内容</view>      
+      <view>
+        <textarea placeholder='请输入需求具体要求内容，可附加图片...' name="content" value="{{DemandArr.content}}"  placeholder-class='placeholderStyle'></textarea>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class='img'>
+          <view class='imgs'  bindtap="UploadImage" data-image-type="content">
+            <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image>       
+          </view>
+          <block >
+            <view class='imgs' wx:for="{{previewImages.content_images}}" wx:key="imageKey" wx:for-index="imageKey" wx:for-item="imageInfo">
+              <image src='{{ResourceRootUrl}}{{imageInfo}}'></image>
+              <i class='icon iconfont icondelete' data-id="{{imageKey}}" bindtap="DeleteImage" data-image-type="content"></i>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='check'>
+      <view class='in' bindtap="getChooseLocation">
+        <view  class='right'>所在地</view>
+        <view class="xuanze" >
+                        <view class='inright'>{{current_address_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+                </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>手机号码</view>
+        <view class='inright'>
+          <input  name="phone" value="{{DemandArr.phone}}" placeholder='请输入手机号码' placeholder-class='placeholderStyle'></input>
+        </view>
+      </view>
+    </view>
+    <view class='btn'>
+      <button  formType="submit" >发布服务</button>
+    </view>
+  </form>
+</view>
+
+
+

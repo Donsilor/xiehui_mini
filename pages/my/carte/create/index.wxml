@@ -1,0 +1,59 @@
+<!--pages/my/carte/create/index.wxml-->
+<view class='main'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='img' bindtap="UploadImage">
+      <image wx:if="{{formSelectParams.logo}}" src='{{ResourceRootUrl}}{{formSelectParams.logo}}'></image>
+      <image  wx:else src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png' ></image>
+    </view>
+    <view class='in iname'>
+      <view class='right'>姓名</view>
+      <view class='inright'>
+        <input placeholder='请输入您的姓名' name="name" value="{{carteArr.name}}"  placeholder-class='placeholderStyle'></input>
+      </view>
+    </view>
+    <view class='in'>
+      <view class='right'>公司名称</view>
+      <view class='inright'>
+        <input placeholder='请输入公司名称' name="company_name" value="{{carteArr.company_name}}"  placeholder-class='placeholderStyle'></input>
+      </view>
+    </view>
+    <view class='in'>
+      <view class='right'>职位</view>
+      <view class='inright'>
+        <input placeholder='请输入您的职位'  name="position" value="{{carteArr.position}}"  placeholder-class='placeholderStyle'></input>
+      </view>
+    </view>
+    <view class='in' >
+      <view  class='right'>地址</view>
+       <view class="xuanze"  bindtap="getChooseLocation">
+        <view class='inright'>{{current_address_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+                </view>
+    </view>
+    <view class='in'>
+      <view  class='right'>行业</view>
+      <view class="xuanze">
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range-key="name" value="{{multiIndex}}"  range="{{type_arr}}">
+                        <view class='inright'>{{industry_type_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+                    </picker>
+                </view>
+    </view>
+    <view class='in'>
+      <view  class='right'>手机号码</view>
+      <view class='inright'>
+        <input placeholder='请输入联系人手机号码'  name="phone" value="{{carteArr.phone}}"     placeholder-class='placeholderStyle'></input>
+      </view>
+    </view> 
+    <view class='in'>
+      <view  class='right'>简介</view>
+      <view class='inright'>
+        <input placeholder='一句话介绍您负责的业务'  name="content" value="{{carteArr.content}}"   placeholder-class='placeholderStyle'></input>
+      </view>
+    </view> 
+    <view class='btn'>
+      <button formType="submit" >提交</button>
+    </view>  
+  </form>
+</view>
+
+
+

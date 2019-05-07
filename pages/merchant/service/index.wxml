@@ -1,0 +1,43 @@
+<!--pages/merchant/service/index.wxml-->
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{main_images}}" wx:key='item'>
+      <swiper-item>
+        <image src="{{ResourceRootUrl}}{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='tit_o'>
+  <view class='tit'>{{detail.title}}</view>
+  <view class='mor'>
+    <span>浏览 {{detail.views}}</span>
+    <image src='{{ResourceRootUrl}}{{detail.shop_logo}}'></image>{{detail.shop_name}}</view>
+</view>
+
+<view class='about' style='display: '>
+  <view class='h2'>详情介绍</view>
+  <view class='text'>
+    {{detail.content}}
+  </view>
+  <view class='img'>
+    <block wx:for="{{content_images}}" wx:key='item'>
+      <image src="{{ResourceRootUrl}}{{item}}" mode='widthFix'></image>
+    </block>
+  </view>
+</view>
+<view class='nav_n'>
+  <view class='left' bindtap='goshop' >
+    <i class="icon iconfont iconshangjia"></i>
+    <view class='t'>店铺</view>
+  </view>
+  <view class='middle' wx:if='{{collectionStatus}}' bindtap='clickCollection'>
+    <i class="icon iconfont iconbiaoxingfill" style='color:#006688;'></i>
+    <view class='t'>已收藏</view>
+  </view>
+  <view class='middle' wx:else bindtap='clickCollection'>
+    <i class="icon iconfont iconbiaoxingfill"></i>
+    <view class='t'>收藏</view>
+  </view>
+  <view class='right' bindtap='makePhone' data-phone='{{detail.phone}}' >立即联系 {{detail.phone}}</view>
+</view>

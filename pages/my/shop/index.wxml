@@ -1,0 +1,39 @@
+<!--pages/my/shop/index.wxml-->
+<view class='main' hidden='{{is_hidden}}'>
+  <view class='content'>
+    <view class='top'>
+      <view class='img'>
+        <image src='{{ResourceRootUrl}}{{detail.logo}}'></image>
+      </view>
+      <view class='user'>
+        <view class='name'>{{detail.shop_name}}</view>
+        <view class='mo'>{{detail.enter_name}}</view>
+      </view>
+      <view class='xu' bindtap='goPage' data-type='1'>查看店铺</view>
+    </view>
+    <view class='menu'>
+      <view>
+        <view class='shu'>{{detail.browse_num}}</view>
+        <view class='lei'>访问量</view>
+      </view>
+      <view>
+        <view  class='shu'>{{detail.attention_num}}</view>
+        <view  class='lei'>关注数</view>
+      </view>
+      <view bindtap='goPage' data-type='4'>
+        <view class='shu'>{{detail.service_num}}</view>
+        <view class='lei'>服务商品</view>
+      </view>
+    </view>    
+  </view> 
+   <view class='fa'>
+    <view class='tulei' bindtap='goPage' data-type='2'>
+        <view class='tu'><image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/shop1.png'></image></view>
+        <view class='lei'>发布服务</view>
+      </view>
+      <view class='tulei' bindtap='goPage' data-type='3'>
+        <view  class='tu'><image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/shop2.png'></image></view>
+        <view  class='lei'>编辑店铺</view>
+      </view>
+  </view> 
+</view>

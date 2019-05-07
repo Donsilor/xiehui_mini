@@ -1,0 +1,45 @@
+<!--pages/my/carte/detail/index.wxml-->
+<view class='main'>
+  <view class='card'>
+    <view class='top'>
+      <view class='img'>
+        <image src='{{ResourceRootUrl}}{{detail.logo}}'></image>
+      </view>
+      <view class='user'>
+        <view class='name'>{{detail.name}}</view>
+        <view class='mo'>{{detail.position}}</view>
+      </view>
+      <view wx:if="{{detail.is_me}}">
+        <view class='xu' bindtap='goShop' wx:if="{{detail.shop_id}}">进入店铺</view>
+        <view class='xu' bindtap='goPage' data-url='../../shop/create/index' wx:else>创建店铺</view>
+      </view>
+      <view wx:else>
+        <view class='xu' bindtap='goShop' wx:if="{{detail.shop_id}}">进入店铺</view>
+      </view>
+    </view>
+    <view class='menu'>
+      <view class='m1'><i class='icon iconfont iconxingye'></i>APP定制开发</view>
+      <view class='m2'>{{detail.attention_num}}人关注TA</view>
+    </view>
+  </view>
+  <view class='text'>
+    <view class='t1'>{{detail.name}}<i>{{detail.position}}</i></view>
+    <view class='t2'>{{detail.company_name}}</view>
+    <view class='t3'><i class='icon iconfont iconphone_icon'></i>{{detail.phone}}</view>
+    <view class='t4'><i class='icon iconfont icondizhi2'></i>{{detail.address_title}}</view>
+    <view class='t5' wx:if='{{detail.content}}'>{{detail.content}}</view>
+    <view class='t5' wx:else>该会员什么都没有留下...</view>
+  </view>
+  <view hidden="{{is_hidden}}">
+    <view class='btn' wx:if="{{detail.is_me}}">
+      <button class='btn1' open-type="share">分享名片</button>
+      <button class='btn2' bindtap='goPage' data-url='../create/index?id={{detail.id}}'>编辑名片</button>
+    </view>
+    <view class='btn'  wx:else>
+      <button class='btn1' wx:if="{{attentionStatus}}" bindtap='changeAttention' data-ctype='1'>取消关注</button>
+      <button class='btn1' wx:else bindtap='changeAttention' data-ctype='2'>关注名片</button>
+      <button class='btn2' bindtap='makePhone'>联系TA</button>
+    </view>
+  </view>
+  
+</view>

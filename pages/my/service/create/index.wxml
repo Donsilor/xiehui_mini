@@ -1,0 +1,88 @@
+<!--pages/my/service/create/index.wxml-->
+<view class='main'>
+  <view class='fu'>
+    <view class='fu1'>服务或产品首图</view>
+    <view class='img'>
+      <view class='imgs' bindtap="UploadImage" data-image-type="first">
+        <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image>       
+      </view>
+      <view class='imgs'>
+        <image src='{{ResourceRootUrl}}{{previewImages.first_images}}'></image>
+      </view>
+    </view>
+  </view>
+
+  <view class='fu'>
+    <view class='fu1'>服务或产品主图<i>(最多可上传五张)</i></view>
+    <scroll-view class="scroll-view_H" scroll-x="true">
+      <view class='img'>
+        <view class='imgs' bindtap="UploadImage" data-image-type="main">
+          <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image> 
+        </view>
+        <block wx:for="{{previewImages.main_images}}" wx:key="imageKey" wx:for-index="imageKey" wx:for-item="imageInfo">
+          <view class='imgs'>
+            <image src='{{ResourceRootUrl}}{{imageInfo}}'></image>
+            <i class='icon iconfont icondelete' data-id="{{imageKey}}" bindtap="DeleteImage" data-image-type="main"></i>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='jie'>
+      <view class='name1'>服务或产品名称<input placeholder='请输入服务或产品名称' name="title" value="{{ServiceArr.title}}" placeholder-class='placeholderStyle'></input></view>
+      <view class='name2'>服务或产品介绍</view>      
+      <view>
+        <textarea placeholder='请输入服务或产品介绍，可附加图片' name="content" value="{{ServiceArr.content}}"   placeholder-class='placeholderStyle'></textarea>
+      </view>
+      <scroll-view class="scroll-view_H" scroll-x="true">
+        <view class='img'>
+          <view class='imgs' bindtap="UploadImage" data-image-type="content">
+            <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/update.png'></image>
+          </view>
+          <block wx:for="{{previewImages.content_images}}" wx:key="imageKey" wx:for-index="imageKey" wx:for-item="imageInfo">
+            <view class='imgs'>
+              <image src='{{ResourceRootUrl}}{{imageInfo}}'></image>
+              <i class='icon iconfont icondelete' data-id="{{imageKey}}" bindtap="DeleteImage" data-image-type="content"></i>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='check'>
+      <view class='in'>
+        <view  class='right'>行业分类</view>
+        <view class="xuanze">
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" range-key="name" value="{{multiIndex}}"  range="{{type_arr}}">
+                        <view class='inright'>{{industry_type_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+                    </picker>
+                </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>所在地</view>
+        <view class="xuanze" bindtap="getChooseLocation">
+                        <view class='inright'>{{current_address_title}}<i class='icon iconfont iconarrow-right-copy'></i></view>
+                </view>
+      </view>
+    </view>
+    <view class='contact'>
+      <view class='in'>
+        <view  class='right'>联系人</view>
+        <view class='inright'>
+          <input  placeholder='请输入联系人姓名' name="contact" value="{{ServiceArr.contact}}"  placeholder-class='placeholderStyle'></input>
+        </view>
+      </view>
+      <view class='in'>
+        <view  class='right'>手机号码</view>
+        <view class='inright'>
+          <input placeholder='请输入联系人手机号码'  name="phone" value="{{ServiceArr.phone}}"  placeholder-class='placeholderStyle'></input>
+        </view>
+      </view>
+    </view>
+    <view class='btn'>
+      <button formType="submit" >发布服务</button>
+    </view>
+  </form>
+</view>
+

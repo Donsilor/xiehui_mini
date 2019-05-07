@@ -1,0 +1,63 @@
+<!--index.wxml-->
+<view class='header'>
+  <view class="back">
+    <i class="icon iconfont icondizhi1"></i>
+    {{city}}
+  </view>
+  <view class="search">
+    <view class="search_n">
+      <form bindsubmit="searchSubmit">
+        <view class="text_box">
+          <input id="keyword"  bindfocus='goSearch' name="keyword" type="text" placeholder="搜索您喜欢的商品" class="keyword text" ></input>
+        </view>
+
+      </form>
+    </view>
+  </view>
+
+</view>
+
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3500" duration="1000">
+    <block wx:for="{{mapList}}" wx:key='item'>
+      <swiper-item>
+        <image src="{{ResourceRootUrl}}{{item.img_url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='icon_list'>
+  <view class='l' bindtap='goOtherPage' data-type='2' data-url='../square/index'>
+    <image src='../../images/ico_01.jpg'></image>
+    <view>看需求</view>
+  </view>
+  <view class='l' bindtap='goOtherPage' data-type='1' data-url='../square/index'>
+    <image src='../../images/ico_02.jpg'></image>
+    <view>找服务</view>
+  </view>
+  <view class='l' bindtap='goOtherPage' data-type='3' data-url='../my/about/index'>
+    <image src='../../images/ico_03.jpg'></image>
+    <view>关于协会</view>
+  </view>
+  <view class='l' bindtap='goOtherPage' data-type='4' data-url='../my/collection/index'>
+    <image src='../../images/ico_04.jpg'></image>
+    <view>收藏</view>
+  </view>
+</view>
+<view class='ad_01' bindtap='goOtherPage' data-type='5' data-url='../my/demand/create/index'>
+  <image src='../../images/ad01.jpg' mode='widthFix'></image>
+</view>
+<view class='tit_h2'>
+  推荐服务产品
+</view>
+<view class='Recommend'>
+  <block wx:for="{{serviceList}}" wx:key='item'>
+    <view class='box' bindtap='goServiceDetail' data-id='{{item.id}}' >
+        <image src='{{ResourceRootUrl}}{{item.image_url}}'></image>
+        <view class='p'>
+          <view class='tit'>{{item.title}}</view>
+          <span>查看详情></span>
+        </view>
+    </view>
+  </block>
+</view>

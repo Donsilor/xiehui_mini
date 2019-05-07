@@ -1,0 +1,17 @@
+<!--pages/my/setting/feedback/index.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='container'>
+    <view class='box-default'></view>
+    <view class='tit'>意见反馈</view>
+    <view class='apply'>
+      <view class='section_li'>
+        反馈内容：
+        <view class='duotext'>
+          <textarea placeholder="请输入您的反馈内容" name='remark' />
+        </view>
+      </view>
+      <button wx:if="{{is_submit}}" class='submit' type='default'>已反馈</button>
+      <button wx:else class='submit' form-type="submit" >提交</button>
+    </view>
+  </view>
+</form>

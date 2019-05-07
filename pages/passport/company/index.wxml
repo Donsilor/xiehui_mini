@@ -1,0 +1,91 @@
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form'>
+      <view class='section_li'>
+        <span>*</span>公司名称：
+        <input placeholder="请输入公司名称" name="company_name" />
+      </view>
+
+      <view class='section_li'>
+        <span>*</span>法人姓名：
+        <input placeholder="请输入法人姓名" name="corporation_name" />
+      </view>
+      <view class='section_li'>
+        <span>*</span>法人电话：
+        <input placeholder="请输入法人电话" name="corporation_mobile" />
+      </view>
+
+      <view class='section_li'>
+        <span>*</span>公司地址：
+        <input placeholder="请填写公司地址" name="office_address" />
+      </view>
+
+    </view>
+
+    <view class='section_img'>
+      营业执照：
+      <view class='upload_image'>
+        <view bindtap="UploadImage" data-image-type="business_license">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.business_license}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='section_img'>
+      运营授权书：
+      <view class='upload_image'>
+        <view bindtap="UploadImage" data-image-type="company_warrant">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.company_warrant}}"></image>
+        </view>
+      </view>
+    </view>
+
+
+
+    <view class='form'>
+      <view class='section_li'>
+        <span>*</span>申请人姓名：
+        <input placeholder="请输入姓名" name="name" />
+      </view>
+      <view class='section_li'>
+        <span>*</span>手机号：
+        <input placeholder="请输入手机号" name="mobile" />
+      </view>
+
+      <view class='section_li'>
+        <span>*</span>身份证号：
+        <input placeholder="请输入身份证号码" name="sfz_number" />
+      </view>
+    </view>
+
+    <view class='section_img'>
+      <span>*</span>身份证照：
+      <view class='upload_image idcard'>
+        <view class='' bindtap="UploadImage" data-image-type="sfz_z">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_z}}"></image>
+        </view>
+        <view class='' bindtap="UploadImage" data-image-type="sfz_f">
+          <span>反面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_f}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='section_img'>
+      手持身份证照：
+      <view class='upload_image'>
+        <view bindtap="UploadImage" data-image-type="sfz_sc">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_sc}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='submit'>
+      <button formType="submit">立即提交</button>
+    </view>
+  </form>
+</view>

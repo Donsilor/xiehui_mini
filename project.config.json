@@ -1,0 +1,238 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx7d87d27c5a518d38",
+	"projectname": "xiehui",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 26,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "创建店铺",
+					"pathName": "pages/my/shop/create/index",
+					"query": "id=6",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "发布服务",
+					"pathName": "pages/my/service/create/index",
+					"query": "id=25",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "发布需求",
+					"pathName": "pages/my/demand/create/index",
+					"query": "id=23",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "id=8",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于协会",
+					"pathName": "pages/my/about/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "商户首页",
+					"pathName": "pages/merchant/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "merchant/home",
+					"pathName": "pages/merchant/home/index",
+					"query": "id=3",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "服务列表",
+					"pathName": "pages/my/service/index",
+					"query": "id=9",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "需求列表",
+					"pathName": "pages/my/demand/index",
+					"query": "id=9",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "积分中心",
+					"pathName": "pages/my/integral/index",
+					"query": "id=9",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "供需",
+					"pathName": "pages/square/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "需求详情",
+					"pathName": "pages/merchant/demand/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "常见问题",
+					"pathName": "pages/my/help/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "创建名片",
+					"pathName": "pages/my/carte/create/index",
+					"query": "id=6",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "名片页",
+					"pathName": "pages/my/carte/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提示页",
+					"pathName": "pages/my/shop/prompt/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的店铺",
+					"pathName": "pages/my/shop/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开通会员",
+					"pathName": "pages/my/member/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "我的服务",
+					"pathName": "pages/my/service/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的关注名片",
+					"pathName": "pages/my/carte/my_attention/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的关注名片无",
+					"pathName": "pages/my/carte/prompt/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "名片广场",
+					"pathName": "pages/my/plaza/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "浏览",
+					"pathName": "pages/my/browse/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 24,
+					"name": "关注",
+					"pathName": "pages/my/care/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/my/collection/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

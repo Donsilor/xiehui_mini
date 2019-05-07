@@ -1,0 +1,46 @@
+<!--pages/my/Demand/index.wxml-->
+ <view class="product-container" hidden='{{main_hidden}}'>
+  <view class="product-list">
+    <view class="product-item" wx:for="{{demandList}}" wx:for-index="index" wx:key="{{item}}">
+      <movable-area>
+        <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+          inertia="true"
+          data-productIndex="{{index}}"
+          bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"
+          bindchange="handleMovableChange">
+          <view class="product-item-wrap" bindtap='goDetail' data-id='{{item.id}}'>
+            <view class='content'>
+            <view class='names'>{{item.title}}</view>
+            <view class='date'>发布于{{item.date}}
+              <i class='blue' wx:if='{{item.status == 1}}'>显示中</i>
+              <i class='red' wx:if='{{item.status == 2}}'>个人删除</i>
+              <i class='red' wx:if='{{item.status == 3}}'>系统删除</i>
+            </view>
+            <view class='text'>
+              <view>浏览量 {{item.views}}</view>
+              <view class='ct'>收藏 {{item.attention_num}}</view>      
+            </view>      
+          </view>
+          </view>
+        </movable-view>
+      </movable-area>
+      <view class="delete-btn" data-id="{{item.id}}" data-index='{{index}}' bindtap="performDelete" wx:if="{{item.status == 1}}">删除</view>
+      <view class="delete-btn" wx:else>已删除</view>
+    </view>
+  </view>
+  <view class='foot'>
+    <view class='fa' bindtap='goCreate'><view>立即发布<i class='icon iconfont iconfabu'></i></view></view>
+  </view>
+</view>
+
+<view class='no-main' hidden='{{no_hidden}}'>
+  <view class='top'>
+    <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+    <view>您还没有发布过需求</view>
+  </view>
+  <view class='btn'>
+    <button wx:if='{{phone}}' bindtap='goCreate' >发布需求</button>
+    <button wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"  > 发布需求</button>
+  </view>
+</view>

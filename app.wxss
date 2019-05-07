@@ -1,0 +1,162 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1130604 */
+  src: url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.eot');
+  src: url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1130604_vv58a6vqbn.svg#iconfont') format('svg');
+}
+
+
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconxiangji:before {
+  content: "\e62b";
+}
+
+.iconarrow-right-copy:before {
+  content: "\e605";
+}
+
+.iconxingye:before {
+  content: "\e61e";
+}
+
+.iconbiaoxingfill:before {
+  content: "\e732";
+}
+
+.icondianpufill:before {
+  content: "\e735";
+}
+
+.icon4:before {
+  content: "\e603";
+}
+
+.icon16:before {
+  content: "\e611";
+}
+
+.iconjubao1:before {
+  content: "\e666";
+}
+
+.iconbangzhuzhongxin:before {
+  content: "\e67d";
+}
+
+.iconxiaofeirenzheng:before {
+  content: "\e682";
+}
+
+.icondizhi:before {
+  content: "\e618";
+}
+
+.icondelete:before {
+  content: "\e635";
+}
+
+.iconchangyonglogo28:before {
+  content: "\e715";
+}
+
+.icongantanhao:before {
+  content: "\e604";
+}
+
+.iconweibiaoti2fuzhi02:before {
+  content: "\e61f";
+}
+
+.iconqiandao:before {
+  content: "\e62c";
+}
+
+.icondianhua:before {
+  content: "\e602";
+}
+
+.iconzhuye:before {
+  content: "\e60f";
+}
+
+.iconsousuo:before {
+  content: "\e619";
+}
+
+.iconshangjia:before {
+  content: "\e638";
+}
+
+.icondizhi1:before {
+  content: "\e63c";
+}
+
+.iconphone_icon:before {
+  content: "\e65f";
+}
+
+.icongantanhao1:before {
+  content: "\e600";
+}
+
+.iconxiala:before {
+  content: "\e65b";
+}
+
+.iconfabu:before {
+  content: "\e628";
+}
+
+.icondizhi2:before {
+  content: "\e615";
+}
+
+.iconjubao:before {
+  content: "\e614";
+}
+
+.iconshouji:before {
+  content: "\e617";
+}
+
+.iconfenlei_:before {
+  content: "\e67e";
+}
+
+/*----导航条---*/
+
+.nav{width: 90%; height: 50px; position: fixed;bottom: 20px; background: #fff; left: 5%; border-radius: 30px; box-shadow: #ccc 0px 0px 20px 0px ;}
+.nav .box{ width:20%; float: left; text-align: center; padding: 5px 0; color: #fff; }
+.nav .box view{ font-size: 10px;color: #ff431e;}
+.nav .box i{ font-size: 24px; color: #ff431e;}
+
+.f_share{ width: 120rpx; height: 25px; line-height: 25px; background: #313131; border-radius: 15px;position: fixed;top: 70px; right: 0px;opacity:0.8;filter:alpha(opacity=80); text-align: center; color: #fff; z-index: 9999;}
+.f_share i{ padding-right: 3px; font-size: 14px;}
+
+.f_tc{ width: 90%; height:150px; background: #fff; position: fixed; top: 40%; left: 5%; padding: 25px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 5px;display: none;}
+.f_tc .text .l,.f_tc .text .r{ width: 50%; float: left; text-align: center; }
+.f_tc image{ width: 70px;}
+.f_tc .text{ font-size: 16px; font-weight: bold; color: #444; line-height: 30px;}
+.f_tc .closs{ position: absolute; top: -10px; right: -5px; font-size:24px; background: #fff; }

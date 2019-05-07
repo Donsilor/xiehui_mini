@@ -1,0 +1,11 @@
+<!--pages/my/about/detail/index.wxml-->
+<import src="/utils/wxParse/wxParse.wxml"/>
+<view class='main_p40'>
+   <view class='top'>
+      <view class='tit'>{{about.title}}</view>
+      <view class='time'>{{about.created_at}}</view>
+   </view>
+   <view class='text'>
+     <template is="wxParse" data="{{wxParseData:content.nodes}}"/>  
+   </view>
+</view>

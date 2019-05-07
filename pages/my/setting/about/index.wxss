@@ -1,0 +1,11 @@
+.about{width: 750rpx; height: 400rpx; color: #fff;  font-size: 30rpx; }
+.about .tit{ text-align: center; padding: 50rpx 0 0 0;font-weight: bold;}
+.about .des{ height: 160rpx; overflow: hidden;  padding: 10rpx 50rpx 0 50rpx;font-size: 28rpx; line-height: 40rpx;}
+.about .more{ width:200rpx; height: 60rpx; border-radius: 60rpx;  text-align: center;border: 1px solid #fff; line-height: 60rpx; font-size: 28rpx; margin: 20rpx auto;  }
+
+.main_p40{ padding: 40rpx;}
+.main_p40 .tit_h2{ height: 80rpx;  font-size: 30rpx; color:#a9a9a9;}
+.box_c .box{ height: 120rpx; padding-bottom: 64rpx;}
+.box_c .box .img,.box_c .box .img image{width: 120rpx; height: 120rpx; float: left;}.box_c .box .tit_des{width: 535rpx; padding-left: 15rpx; height: 120rpx; float: left; }
+.box_c .box .tit_des .tit{font-size: 34rpx; height:50rpx; overflow: hidden; }
+.box_c .box .tit_des .des{font-size: 26rpx; height:70rpx; overflow: hidden; color: #a9a9a9; }

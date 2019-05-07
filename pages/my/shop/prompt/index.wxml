@@ -1,0 +1,13 @@
+<!--pages/my/shop/prompt/index.wxml-->
+<view class='no-main'>
+  <view class='top'>
+    <image src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/create.png'></image>
+    <view>您还没有店铺</view>
+  </view>
+  <view class='btn' >
+    <button wx:if='{{phone}}' bindtap='goCreate' >创建店铺</button>
+    <button wx:else open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" >创建店铺</button>
+  </view>
+</view>
+
+

@@ -1,0 +1,41 @@
+/* pages/my/care/prompt/index.wxss */
+.main{
+ width: 750rpx;
+ min-height: 1000rpx; 
+}
+.new{
+  margin-top: 150rpx;
+}
+.main .new .n1{
+  font-size: 34rpx;
+  color: #333;
+  margin-left: 40rpx;
+}
+.main .new .content{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30rpx; 
+}
+.main .new .content image{
+  width: 330rpx;
+  height: 232rpx;
+  margin-bottom: 20rpx;
+}
+.main .new .content .text{
+  font-size: 28rpx;
+  color: #999;
+}
+.main .new .btn{
+  margin: 40rpx;
+} 
+.main .new .btn button{ 
+  width: 590rpx;
+  height: 80rpx;
+  color: #543115;
+  font-size: 34rpx;
+  margin-left: 40rpx;
+  background: -webkit-linear-gradient(left,#ebd099,#e0be7c); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ebd099, #e0be7c); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ebd099, #e0be7c); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ebd099 , #e0be7c); /* 标准的语法 */ 
+}

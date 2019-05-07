@@ -1,0 +1,89 @@
+/* pages/my/shop/index.wxss */
+.main {
+  width: 750rpx;
+  min-height: 1000rpx;  
+  background: url(https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/my_bg.jpg) no-repeat;                   background-size:100%;
+  padding-top: 80rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .content{  
+  width: 670rpx;
+  height: 372rpx;
+  border-radius: 10rpx;
+  box-shadow:  0 0 10rpx #e4e1df;
+  background-color: #fff; 
+  margin: 0 auto;
+}
+.main .content .top{
+  width: 100%;
+  position: relative;
+  padding-top: 40rpx;
+  height: 180rpx;
+}
+.main .content .top image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  position: absolute;
+  left: 40rpx;
+  box-shadow:  0 0 10rpx #e4e1df;
+}
+.main .content .top .user{
+  line-height: 40rpx;
+  position: absolute;
+  left: 160rpx;
+}
+.main .content .top .user .name{
+  font-size: 30rpx;
+  color:#333;
+}
+.main .content .top .user .mo{
+  font-size: 24rpx;
+  color: #999;
+  text-align: left;
+}
+.main .content .top .xu{
+  width: 120rpx;
+  height: 40rpx;
+  background-color: #43b1f4;
+  font-size: 24rpx;
+  border-radius: 20rpx 0 0 20rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  color: #fff;
+
+}
+.main .content .menu {
+  display: flex;
+  justify-content: space-around;
+  color: #333;
+}
+.main .content .menu .shu{
+  font-size: 36rpx;
+}
+.main .content .menu .lei{
+  font-size: 28rpx;
+
+}
+
+.main .fa{
+  width: 670rpx;
+  height: 208rpx;
+  box-shadow:  0 0 10rpx #e4e1df;
+  background-color: #fff;  
+  margin: 0 auto;
+  display: flex;
+  margin-top:10%;
+}
+.main .fa .tulei{
+  margin:40rpx; 
+}
+.main .fa .tulei .tu image{
+  width: 93rpx;
+  height: 93rpx;
+}
+.main .fa .lei{
+  font-size: 24rpx;
+}

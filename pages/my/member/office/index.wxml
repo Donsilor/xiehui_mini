@@ -1,0 +1,25 @@
+<!--pages/my/member/office/index.wxml-->
+<view class='main'>
+   <view class='top'>
+     <view>开平协会</view>
+     <view>加入会员 享专属权利</view>
+   </view>
+   <view class='vip'>
+    <view wx:if="{{memberType == 1}}">开通个人会员-特享会员四重礼</view>
+    <view wx:else>开通企业会员-特享会员四重礼</view>
+    <view class='money' >￥<i>{{money}}</i>元/年</view>
+    <view class='wei'>仅限微信支付</view>
+   </view>
+   <view class='check'>
+    <view class='ic'>选择所属办事处
+      <picker bindchange="bindPickerChange" range-key='office_name' range="{{officeList}}">
+        <view class="picker">
+         {{office_title}}<i class='icon iconfont iconarrow-right-copy'></i>
+        </view>
+      </picker>
+      </view>
+   </view>
+   <view class='pay' bindtap='wxPay'>
+    <button>确认支付</button>
+   </view>
+</view>

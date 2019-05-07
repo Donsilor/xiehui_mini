@@ -1,0 +1,60 @@
+/* pages/my/carte/create/index.wxss */
+.main{
+  width: 750rpx;
+  min-height: 1000rpx;
+} 
+.main form{
+  font-size: 34rpx;
+  color: #999;
+}
+.main form .img{
+  display: flex;
+  justify-content: center;
+  padding: 40rpx;
+}
+.main form .img image{
+  width: 185rpx;
+  height: 185rpx;
+  border-radius: 90rpx;
+  box-shadow: 0 0 10rpx #d1d1d1;
+}
+.main form .in{
+  display: flex;
+  margin: 0 auto;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  width: 90%;
+} 
+.main form .iname{
+  border-top: 1rpx solid #f5f5f5 !important;
+}
+.main form .right{
+  width: 170rpx;
+  font-size: 34rpx;
+  color:#333;
+}
+.main form .in .inright{
+  font-size: 34rpx;
+  color: #999;
+}
+.main form .inright input{
+  width: 100%;
+}
+.main form .inright input .placeholderStyle{
+  font-size: 34rpx;
+  color: #999;
+}
+.main form .in .inright i{
+  position: absolute;
+  right: 20rpx;
+}
+
+.btn {
+  padding: 82rpx 0;
+}
+.btn button{
+  width: 85%;
+  font-size: 36rpx;
+  background-color: #43b1f4;
+  color: #fff;  
+} 

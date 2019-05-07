@@ -1,0 +1,91 @@
+<!--pages/my/collection/index.wxml-->
+<!--pages/aaa/index.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">
+    服务
+  </view>
+  <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+    需求
+  </view>
+</view>
+<view class = "{{currentTab == 1 ? 'show':'hidden'}}" >
+  <scroll-view  class='release'>
+    <view>
+      <view class="product-container">
+        <view class="product-list">
+          <view class="product-item" wx:for="{{serviceList}}" wx:for-index="index" wx:key="{{item}}">
+            <movable-area>
+              <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+                inertia="true"
+                data-productIndex="{{index}}"
+                bindtouchstart="handleTouchStart"
+                bindtouchend="handleTouchEnd"
+                bindchange="handleMovableChange"
+                data-curType='1'
+                >
+
+                <view class="product-item-wrap">
+                  <view class='shancont'>
+                    <view class='content' bindtap='goDetail' data-url='../../merchant/service/index?id={{item.service_id}}'>
+                      <view class='img'>
+                        <image src='{{ResourceRootUrl}}{{item.image_url}}'></image>
+                      </view>
+                      <view class='text'>
+                        <view class='t1'>{{item.title}}</view>
+                        <view class='t2'>#{{item.industry_name}}</view>
+                        <view class='t3'>{{item.shop_name}}</view>
+                      </view>
+                    </view>
+                    <view class='bt'> 
+                      <view class='btn2'><view bindtap='makePhone' data-phone='{{item.phone}}'>立即联系</view></view>
+                    </view>
+                  </view>
+                </view>
+              </movable-view>
+            </movable-area>
+            <view class="delete-btn" data-type='1' data-id="{{item.service_id}}" bindtap="clickCollection">删除</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 2 ? 'show':'hidden'}}" >
+  <scroll-view class='need'>
+    <view>
+      <view class="product-container">
+        <view class="product-list">
+          <view class="product-item" wx:for="{{demandList}}" wx:for-index="index" wx:key="{{item}}">
+            <movable-area>
+              <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+                inertia="true"
+                data-productIndex="{{index}}"
+                bindtouchstart="handleTouchStart"
+                bindtouchend="handleTouchEnd"
+                bindchange="handleMovableChange"  
+                data-curType='2'
+                >
+                <view class="product-item-wrap">
+                  <view class='content' bindtap='goDetail' data-url='../../merchant/demand/index?id={{item.demand_id}}'>
+                  <view class='names'>{{item.title}}</view>
+                  <view class='date'>
+                    <view class='img'>
+                      <image src='{{avatarRootUrl}}{{item.avatar}}'></image>
+                      <span>{{item.nickname}}</span>
+                    </view>
+                    <view class='text'>{{item.timeText}} | {{item.address_name}}</view>
+                  </view>                  
+                </view>
+                </view>
+              </movable-view>
+            </movable-area>
+            <view class="delete-btn" data-type='2' data-id="{{item.demand_id}}" bindtap="clickCollection">删除</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+
+

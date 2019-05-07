@@ -1,0 +1,16 @@
+<!--pages/my/browse/index.wxml-->
+<view class='main'>
+  <view class='top'>
+    <view>共<i>{{count}}</i>条</view>
+    <view bindtap='emptyAll'>清空</view>    
+  </view>
+  <view class='content'>
+     <block wx:for='{{browseList}}' wx:if='item'>
+      <view class='c' bindtap='goDetail' data-url='../../merchant/demand/index?id={{item.demand_id}}'>
+        <view class='title'>{{item.demand_title}}</view>
+        <view class='collect'>{{item.collectionNum}}人收藏</view>
+      </view>
+    </block>
+  </view>
+</view>
+

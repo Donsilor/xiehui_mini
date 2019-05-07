@@ -1,0 +1,107 @@
+/* pages/my/welfare/index.wxss */
+.main {
+  width: 750rpx;
+  min-height: 1000rpx;  
+  background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/hy_bg.jpg) no-repeat;                    background-size:100%;
+  padding-top: 80rpx;
+}
+.main .cantent{
+  width: 670rpx;
+  height: 1056rpx;
+  box-shadow: 0 0 20rpx #ebbe89;
+  background-color: #fff;
+  border-radius: 10rpx;  
+  padding-top:40rpx; 
+  margin: 0 auto;
+}
+.main .cantent .top{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 180rpx;
+}
+.main .cantent .top .img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90rpx;
+  position: absolute;
+  left: 40rpx;
+}
+.main .cantent .top .user{
+  line-height: 40rpx;
+  position: absolute;
+  left: 160rpx;
+}
+.main .cantent .top .user .name{
+  font-size: 30rpx;
+  color:#653f01;
+}
+.main .cantent .top .user .name i{
+  width: 116rpx;
+  height: 34rpx;
+  color: #e0b26c;
+  font-size: 22rpx;
+  border:1rpx solid #e0b26c;
+  border-radius: 17rpx;
+  margin-left: 15rpx;
+}
+.main .cantent .top .user .mo{
+  font-size: 24rpx;
+  color: #8d682e;
+}
+.main .cantent .top .user .qi{
+  font-size: 24rpx;
+  color: #bda37a;
+}
+.main .cantent .top .xu{
+  width: 120rpx;
+  height: 40rpx;
+  background: linear-gradient(to right, #edd090, #ebbe89 );
+  font-size: 24rpx;
+  border-radius: 20rpx 0 0 20rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+}
+.main .cantent .menu{
+  width: 90%;
+  border-top: 1rpx solid #edd090;
+  margin: 0 auto;
+  text-align: center;
+}
+.main .cantent .menu .z{
+  background: url(https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/members_bg.png) no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #653f01;
+  margin-top: 40rpx;
+}
+.main .cantent .menu .en{
+  font-size:20rpx;
+  color: #999;
+}
+.main .cantent .quan{
+  display: flex;
+  justify-content: center;  
+  text-align: left;
+  line-height: 40rpx;
+
+}
+.main .cantent .quan :first-child{
+  display: flex;
+  align-items: center;
+}
+.main .cantent .quan .i1{
+  margin: 20rpx;
+}
+.main .cantent .quan .i1 :first-child{
+  color: #653f01;
+  font-size: 30rpx;
+}
+.main .cantent .quan .i1 :last-child{
+  color: #666;
+  font-size: 26rpx;  
+}

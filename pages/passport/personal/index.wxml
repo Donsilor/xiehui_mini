@@ -1,0 +1,62 @@
+<!--pages/register/agentregister/index.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form'>
+      <view class='section_li'>
+        <span>*</span>您的姓名：
+        <input placeholder="请输入您的姓名" name="name" />
+      </view>
+      <view class='section_li'>
+        <span>*</span>手机号：
+        <input placeholder="请输入手机号" name="mobile" />
+      </view>
+      <view class='section_li'>
+        <span>*</span>身份证号：
+        <input placeholder="请输入身份证号码" name="sfz_number" />
+      </view>
+
+      <view class='section_li'>
+        <span>*</span>常住地址：
+        <input placeholder="请填写详地址" name="address" />
+      </view>
+    </view>
+
+    <view class='section_img'>
+      <span>*</span>身份证照：
+      <view class='upload_image idcard'>
+        <view class='' bindtap="UploadImage" data-image-type="sfz_z">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_z}}"></image>
+        </view>
+        <view class='' bindtap="UploadImage" data-image-type="sfz_f">
+          <span>反面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_f}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='section_img'>
+      手持身份证照：
+      <view class='upload_image'>
+        <view bindtap="UploadImage" data-image-type="sfz_sc">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.sfz_sc}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='section_img'>
+      职业资格证：
+      <view class='upload_image'>
+        <view bindtap="UploadImage" data-image-type="certificate">
+          <span>正面</span>
+          <image src="{{ResourceRootUrl}}{{previewImages.certificate}}"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='submit'>
+      <button formType="submit">立即提交</button>
+    </view>
+  </form>
+</view>

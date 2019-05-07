@@ -1,0 +1,9 @@
+/* pages/my/setting/feedback/index.wxss */
+page{background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554384625522&di=18fbc518d73b091ddd2912a5126e68f3&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F48%2F85%2F35m58PIChbY_1024.jpg)}
+.tit{text-align: center; font-size: 36rpx;color: #fff;margin: 34rpx 0;}
+.apply{width: 660rpx;margin: 0 auto; background-color: #fff;border-radius: 20rpx;padding: 30rpx;box-sizing: border-box;margin-top: 100rpx;}
+.section_li{margin-bottom: 30rpx;}
+.section_li .duotext input{ width: 100%;height: 80rpx;border: 2rpx solid #eee;padding: 15rpx;box-sizing: border-box;border-radius: 10rpx;margin-top: 15rpx;}
+.section_li .duotext textarea{ width: 100%;height: 200rpx;border: 2rpx solid #eee;padding: 15rpx;box-sizing: border-box;border-radius: 10rpx;margin-top: 15rpx;}
+.submit{width: 100%;height: 80rpx;background-color: #fc9315;border-radius: 10rpx;text-align: center;color: #fff;font-size: 32rpx;line-height: 80rpx;}
+.box-default{height: 150rpx;}

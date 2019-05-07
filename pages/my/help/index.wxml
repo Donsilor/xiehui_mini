@@ -1,0 +1,28 @@
+<!--pages/my/help/index.wxml-->
+<import src="/utils/wxParse/wxParse.wxml"/>
+<view class='wenda'>
+    <view class='tit'>问答中心</view>
+
+    <block  wx:for="{{helpList}}" wx:key="id" wx:for-item="indexHelpInfo" wx:for-index="index">
+        <view class='box' data-id="{{indexHelpInfo.id}}" bindtap="answerView" data-index="{{index}}">
+            <view class='sub-tit-box'>
+                <view class='xuhao'>
+                    <image src='/images/home_icon_answer.png'></image>
+                    <span class="num">0{{index+1}}</span>
+                </view>
+                <span class="tit-li">{{indexHelpInfo.title}}</span>
+                <span class="fr">
+                    <i class="iconfont icon-arrr1"></i>
+                </span>
+            </view>
+
+            <view class="answer-box" wx:if="{{currentAnswerShowId == indexHelpInfo.id}}">
+              <view class='spread spread-on'>
+                <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+              </view>
+            </view>
+
+        </view>
+    </block>
+
+</view>

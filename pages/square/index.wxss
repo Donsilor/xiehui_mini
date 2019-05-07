@@ -1,0 +1,85 @@
+/* pages/square/index.wxss */
+/*-------header------*/
+.header {background-color: #f5f5f5;width: 100%;position: relative;height: 3rem;border-bottom: solid 1px #e4e4e4;}
+.back {vertical-align: middle;position:absolute;top:0;left:0;height:3rem; line-height:3rem;width:4rem; text-align: center; font-size: 28rpx;color:#666;}
+.back_a{height:3rem;width:3.5rem; display:block; background-image:url(../images/back.png); background-repeat:no-repeat; background-size:1.05rem 1.05rem; background-position:center center;}
+.back i{ color:#666;}
+
+
+.search{position:relative;height:3rem;margin:0 0.5rem 0 4rem;overflow: hidden;}
+.search_n{height:2.2rem;margin:.4rem auto;position: relative;background: #fff;display:block;border-radius:2rem;-webkit-border-radius:2rem; border: 1px solid #eee;}
+.search .text_box{padding:0 1.1rem;}
+.search .text{width:100%;border:none;height:1.7rem;line-height:1.7rem;outline:none;font-size:.8rem;padding:.25rem 0;color:#ccc;background: #fff;display:block; text-align: center;}
+.search .submit{width: 2.2rem;height: 2.2rem;position: absolute;right: 0px;top: 0px;background:#fd9d21 url(http://m.eqguquan.com/images/search-btn.png) no-repeat center center;background-size: 60%;border:none;border-top-right-radius: 2rem;-webkit-border-top-right-radius: 2rem;  border-bottom-right-radius: 2rem;-webkit-border-bottom-right-radius: 2rem;border-bottom-left-radius: 0;-webkit-border-bottom-left-radius: 0;border-top-left-radius: 0;-webkit-border-top-left-radius: 0;}
+.search_box_focus{padding-left: 3.25rem;}
+
+swiper{ background: #fff; height: 253rpx; padding: 45rpx 0; text-align: center;}
+.slide-image{ width: 672rpx; background: #ce3; height: 253rpx; margin: 0 auto; border-radius: 10px;}
+
+.icon_list{ width: 100%; height: 180rpx;}
+.icon_list .l{ width:25%; float: left; text-align: center; font-size: 30rpx;}
+.icon_list .l image{ width: 89rpx; height: 89rpx;}
+.icon_list .l view{ padding: 20rpx 0;}
+.ad01{ width: 750rpx; height: auto;}
+
+.ad01 image{ width: 750rpx;}
+
+.scroll_box{
+width: 100%;
+overflow: hidden;
+padding:20rpx 0 ;
+background: #fff;
+white-space: nowrap;
+}
+.item_list{
+width: 150rpx;
+height: 60rpx;
+font-size: 30rpx;
+text-align: center;
+display: inline-block;
+}
+.scroll_box .active{  color:#43b1f4; }
+
+
+/* pages/detail/detail.wxss */
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    border-top: 10rpx solid #f5f5f5;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    font-size: 30rpx;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 50%; 
+    color:#434343;
+}
+.swiper-tab .active{
+    color:#43b1f4;
+    background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/active.jpg) no-repeat center bottom ;background-size: 62rpx auto;
+}
+
+.swiper{
+padding-bottom: 100rpx;
+}
+.Recommend{ padding: 20rpx; }
+.Recommend .box{ width: 315rpx; float: left; padding: 0 20rpx 20rpx 20rpx; }
+.Recommend .box image{ width: 315rpx; height: 300rpx;}
+.Recommend .box .p{ height:135rpx; }
+.Recommend .box .tit{ font-size:24rpx; height: 80rpx; line-height: 40rpx; overflow: hidden;}
+.Recommend .box span{ font-size: 24rpx; color: #999;}
+
+.need .box{ padding:35rpx 40rpx; border-bottom: 5rpx solid #f5f5f5; }
+.need .box .tit{ font-size: 28rpx; padding-bottom: 20rpx;}
+.need .box .mor image{ width: 30rpx; height: 30rpx; border-radius: 15rpx;vertical-align: middle;margin-right: 10rpx; }
+.need .box .mor { font-size: 24rpx; color: #666;}
+.need .box .mor span{ float: right}
+.ishidden{display: none}
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}

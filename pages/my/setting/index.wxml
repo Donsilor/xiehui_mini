@@ -1,0 +1,20 @@
+<!--pages/personalCenter/certification/index.wxml-->
+
+<view class='container'>
+    <view class='form' bindtap="navigatorToUrl">
+        <view class='section_li' data-url="feedback/index">
+            意见反馈：
+            <view class="xuanze">
+                <em></em>
+                <i class="iconfont icon-arrr1"></i>
+            </view>
+        </view>
+        <view class='section_li' data-url="about/index">
+            关于查租网：
+            <view class="xuanze">
+                <em></em>
+                <i class="iconfont icon-arrr1"></i>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,18 @@
+<view class='search_box'>
+    <view class='search' >
+        <view class='text'>
+            <input placeholder='公司名称' bindinput="bindKeyInput" value="{{name}}"></input>
+        </view>
+        <view class='submit' bindtap="searchEnterprise">搜索</view>
+    </view>
+</view>
+
+<view class='item_box'>
+
+    <block  wx:for="{{enterprises}}" wx:key="id" wx:for-item="enterpriseInfo">
+        <view class="item" data-id="{{enterpriseInfo.user_id}}" bindtap="entryApply">
+            {{enterpriseInfo.company_name}}
+            <span>{{enterpriseInfo.corporation_name}}</span>
+        </view>
+    </block>
+</view>

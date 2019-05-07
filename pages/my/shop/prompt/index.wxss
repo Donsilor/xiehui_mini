@@ -1,0 +1,32 @@
+/* pages/my/shop/prompt/index.wxss */
+.no-main{
+  width: 750rpx;
+  min-height: 1000rpx;
+}
+.no-main .top{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.no-main .top image{
+  width: 85%;
+}
+.no-main .top :nth-child(2){
+  font-size: 30rpx;
+  color: #999;
+  text-align: center;
+  margin: 40rpx;
+}
+.no-main .btn{
+  width: 100%;
+  position: fixed;
+  bottom: 30%;
+  display: flex;
+  justify-content: center; 
+}
+.no-main .btn button{
+  width: 85%;
+  font-size: 36rpx;
+  background-color: #43b1f4;
+  color: #fff;  
+}

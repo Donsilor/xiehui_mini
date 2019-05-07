@@ -1,0 +1,42 @@
+<!--pages/merchant/demand/index.wxml-->
+<!--index.wxml-->
+
+<view class='tit_o'>
+  <view class='tit'>{{detail.title}}</view>
+  <view class='mor'>
+    <span>{{detail.timeText}} 浏览 {{detail.views}}  </span>
+    <image src="{{ResourceRootUrl}}/storage/avatars/{{detail.avatar}}"></image>{{detail.nickname}}</view>
+</view>
+
+<view class='about' style='display: '>
+  <view class='h2'>具体要求</view>
+  <view class='text'>
+    {{detail.content}}
+  </view>
+  <view class='img'>
+  <block wx:for="{{detail.content_images}}" wx:key='item'>
+    <image src='{{ResourceRootUrl}}{{item}}' mode='widthFix'></image>
+    </block>
+  </view>
+</view>
+<view class='nav_n'>
+  <view class='left' bindtap="showDialog">
+    <i class="icon iconfont iconjubao"></i>
+    <view class='t'>举报</view>
+  </view>
+  <!-- 组件 -->
+  <view class="prompt"> 
+    <prompt id='prompt' title='举报' placeholder='备注说明' cancelText='取消' confirmText='确定' bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent" >
+    </prompt>
+  </view>
+  <!-- end -->
+  <view class='middle' wx:if='{{collectionStatus}}' bindtap='clickCollection'>
+    <i class="icon iconfont iconbiaoxingfill" style='color:#006688;'></i>
+    <view class='t'>已收藏</view>
+  </view>
+  <view class='middle' wx:else bindtap='clickCollection'>
+    <i class="icon iconfont iconbiaoxingfill"></i>
+    <view class='t'>收藏</view>
+  </view>
+  <view class='right' bindtap='makePhone' data-phone='{{detail.phone}}'>立即联系 {{detail.phone}}</view>
+</view>

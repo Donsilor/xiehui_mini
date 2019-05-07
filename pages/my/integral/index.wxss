@@ -1,0 +1,118 @@
+/* pages/my/integral/index.wxss */
+.main{
+  width: 750rpx; 
+  min-height: 1000rpx;
+  background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/hy_bg.jpg) no-repeat;                    background-size:100%;
+}
+.main .top{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.main .top .img image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90rpx;
+}
+.main .top .user{
+  line-height: 50rpx;
+}
+.main .top .user :first-child{
+  font-size: 30rpx;
+  color: #653f01;
+}
+.main .top .user :last-child{
+  font-size: 24rpx;
+  color: #bc875d;
+  text-decoration: underline;
+}
+.main .myint{
+  width: 670rpx;
+  height: 270rpx;
+  box-shadow: 0 0 10rpx #e4e1df;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 10rpx; 
+}
+.main .myint .my{
+  font-size: 30rpx;
+  color: #653f01;
+  margin:40rpx 40rpx 0 40rpx;
+  padding-top:20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.main .myint .my i{
+  font-size: 24rpx;
+}
+.main .myint .money{
+  font-size: 70rpx;
+  color: #653f01;
+  margin:20rpx 40rpx 0 40rpx;
+}
+.main .myint .record{
+  width: 130rpx;
+  height: 40rpx;
+  color: #653f01;
+  font-size: 26rpx;
+  border: 1rpx solid #653f01;
+  border-radius: 20rpx;
+  text-align: center;
+  margin:20rpx 40rpx 0 40rpx;
+}
+.main .ren{
+  font-size: 30rpx;
+  color: #653f01;
+  margin:40rpx;
+}
+.main .ji{
+  width: 670rpx;
+  height: 150rpx;
+  background-color: #edd090;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40rpx;
+}
+.main .ji .left{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 40rpx;
+}
+.main .ji .left i{
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+.main .ji .left .left1 .qian{
+  font-size: 28rpx;
+  color: #653f01;
+}
+.main .ji .left .left1 .fen{
+  font-size: 28rpx;
+  color: #bc875d;
+}
+.main .ji .yi{
+  font-size: 28rpx;
+  color: #653f01;
+  position: absolute;
+  right: 40rpx;
+  text-align: center;
+}
+
+.main .ji .share{
+  font-size: 28rpx;
+  color: #653f01;
+  position: absolute;
+  right: 1rpx;
+  text-align: center;
+  background-color: #edd090;
+}
+
+button::after{ border: none; }

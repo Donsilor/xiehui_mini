@@ -1,0 +1,266 @@
+/* pages/search/index.wxss */
+.main{
+  width: 750rpx;
+  height: 100%;
+  background: #fff;
+}
+.main .page_row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.main .page_row .search{  
+  width: 600rpx; 
+  height: 70rpx; 
+}  
+.main .page_row .search .search_arr placeholderStyle{
+  font-size: 28rpx;
+  color: rgb(178,178,178);
+}
+.main .page_row .search .search_arr {  
+  border: 1px solid rgb(230,230,234);  
+  border-radius: 90rpx;  
+  margin-left: 30rpx;  
+}  
+
+.main .page_row .search .search_arr input{
+  margin-left: 20rpx; 
+  height: 70rpx;  
+  font-size: 28rpx;
+  color: rgb(178,178,178);
+}  
+  
+.sousuo {  
+  font-size: 28rpx;
+  color: #43b1f4; 
+  margin-right: 48rpx; 
+}
+.swiper-tab{
+    width: 100%;
+    text-align: center;
+    height: 60rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    color: #353535;
+    font-size: 30rpx;
+    background: #fff;
+    margin-top: 30rpx; 
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#353535;    
+}
+.active{
+    font-size: 30rpx;
+    background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/active.jpg) no-repeat center bottom ;background-size: 60rpx auto;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 20rpx;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+/* ------------ store CSS ------------------- */
+.store .s {
+  width: 100%;
+  height: 350rpx;
+  background: #fff;
+  line-height: 40rpx;
+  /* margin-top: 30rpx; */
+  position: relative; 
+}
+
+.store .s .shancont .content {
+  flex: 1;
+  overflow: hidden;
+  padding: 40rpx;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.store .s .img image{
+  width: 125rpx;
+  height: 125rpx;
+}
+
+.store .s .text {
+  margin-left: 20rpx; 
+  display: flex;
+  flex-direction: column;
+}
+
+.store .s .text .t1{
+  font-size: 28rpx;
+  color: #333;
+}
+
+.store .s .text .t2{
+  font-size: 26rpx; height:40rpx; overflow: hidden;
+}
+
+.store .s .text .t3{
+  font-size: 24rpx;
+  color: #666;
+}
+.store .s .text .t3 i{
+  margin: 0 10rpx;
+}
+.store .s .date {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.store .s .date i{
+  width: 81rpx;
+  height: 31rpx;
+  border:1rpx #43b1f4 solid;
+  font-size: 22rpx;
+  border-radius: 90rpx;
+  color: #43b1f4;
+  margin-left: 2%;
+}
+
+.store .s .text {
+  display: flex;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.store .s .text .ct{
+  margin-left: 35rpx;
+}
+/* --------------- need CSS -------------- */
+.need .n {
+  width: 100%;
+  height: 222rpx;
+  background: #fff;
+  line-height: 60rpx;
+  position: relative; 
+}
+
+.need .n .content {
+  flex: 1;
+  overflow: hidden;
+  padding: 40rpx;
+}
+
+.need .n .names {
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #333;
+  line-height: 60rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.need .n .date {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.need .n .date img{
+  width: 37rpx;
+  height: 37rpx;
+}
+
+.need .n .date image{
+  width: 37rpx;
+  height: 37rpx;  
+  box-shadow: 0 0 10rpx #969AA3;
+  border-radius: 90rpx;
+}
+
+.need .n .date span{
+  margin-left: 10rpx;
+}
+
+.need .n .text {
+  display: flex;
+  font-size: 24rpx;
+  color: #666;
+}
+/* ------------ release CSS ------------------- */
+.release .r {
+  width: 100%;
+  height: 350rpx;
+  background: #fff;
+  line-height: 40rpx;
+  /* margin-top: 30rpx; */
+  position: relative; 
+}
+
+.release .r .shancont .content {
+  flex: 1;
+  overflow: hidden;
+  padding: 40rpx;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.release .r .img image{
+  width: 125rpx;
+  height: 125rpx;
+}
+
+.release .r .text {
+  margin-left: 20rpx; 
+  display: flex;
+  flex-direction: column;
+}
+
+.release .r .text .t1{
+  font-size: 28rpx;
+  color: #333;
+}
+
+.release .r .text .t2{
+  font-size: 24rpx;
+  color: #43b1f4;
+}
+
+.release .r .text .t3{
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .r .date {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .r .date i{
+  width: 81rpx;
+  height: 31rpx;
+  border:1rpx #43b1f4 solid;
+  font-size: 22rpx;
+  border-radius: 90rpx;
+  color: #43b1f4;
+  margin-left: 2%;
+}
+
+.release .r .text {
+  display: flex;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.release .r .text .ct{
+  margin-left: 35rpx;
+}

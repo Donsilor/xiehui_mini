@@ -1,0 +1,102 @@
+/* pages/my/carte/detail/index.wxss */
+.main{
+  width: 750rpx;
+  min-height: 1000rpx;
+}
+.main .card{  
+  width: 670rpx;
+  height: 296rpx;
+  border-radius: 10rpx;
+  box-shadow:  0 0 10rpx #e4e1df;
+  background-color: #fff; 
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.main .card .top{
+  width: 100%;
+  position: relative;
+  padding-top: 40rpx;
+  height: 180rpx;
+}
+.main .card .top image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 90rpx;
+  position: absolute;
+  left: 40rpx;
+  box-shadow:  0 0 10rpx #e4e1df;
+}
+.main .card .top .user{
+  line-height: 50rpx;
+  position: absolute;
+  left: 160rpx;
+}
+.main .card .top .user .name{
+  font-size: 34rpx;
+  color:#333;
+}
+.main .card .top .user .mo{
+  font-size: 30rpx;
+  color: #333;
+  text-align: left;
+}
+.main .card .top .xu{
+  width: 120rpx;
+  height: 40rpx;
+  background: -webkit-linear-gradient(left,#edd090,#ebbe89); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #edd090, #ebbe89); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #edd090, #ebbe89); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #edd090 , #ebbe89); /* 标准的语法 */
+  font-size: 24rpx;
+  border-radius: 20rpx 0 0 20rpx;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  color: #653f01;
+
+}
+.main .card .menu {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.main .card .menu .m1{
+  font-size: 28rpx;
+  color: #653f01;
+}
+.main .card .menu .m2{
+  font-size: 28rpx;
+  color: #e0b26c;
+}
+.main .text{
+  width: 670rpx;
+  margin: 0 auto;
+  padding: 40rpx 0;
+  color: #333;
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+.main .text .t1{
+  font-size: 34rpx;
+}
+.main .text .t1 i{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.main .btn{
+  display: flex;
+  /* justify-content: center; */
+  position: fixed;
+  bottom: 10%;
+}
+.main .btn button{ 
+  width: 314rpx;
+  height: 80rpx;
+  color: #543115;
+  font-size: 34rpx;
+  margin-left: 40rpx;
+  background: -webkit-linear-gradient(left,#ebd099,#e0be7c); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #ebd099, #e0be7c); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #ebd099, #e0be7c); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #ebd099 , #e0be7c); /* 标准的语法 */ 
+}
