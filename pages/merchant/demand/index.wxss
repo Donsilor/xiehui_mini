@@ -3,11 +3,11 @@ swiper{ background: #fff; height: 400rpx; padding: 0; text-align: center;}
 .slide-image{ width: 750rpx; background: #ce3; height: 400rpx; margin: 0 auto; border-radius: 0px;}
 
 .tit_o{ padding: 20rpx 40rpx;}
-.tit_o .tit{ font-size: 32rpx; padding-bottom: 20rpx;}
-.tit_o  .mor image{ width: 30rpx; height: 30rpx; border-radius: 15rpx; margin-right: 10rpx; vertical-align: middle;}
-.tit_o  .mor { font-size: 24rpx; color: #999;}
+.tit_o .tit{ font-size: 34rpx; padding-bottom: 20rpx;}
+.tit_o  .mor image{ width: 40rpx; height: 40rpx; border-radius: 20rpx; margin-right: 10rpx; vertical-align: middle;}
+.tit_o  .mor { font-size: 28rpx; color: #999;}
 .tit_o  .mor span{ float: right}
-.about{ font-size: 28rpx; padding: 20rpx; line-height: 45rpx; border: 10rpx solid #f5f5f5; padding-bottom: 100rpx;}
+.about{ font-size: 30rpx; padding: 20rpx; line-height: 45rpx; border: 10rpx solid #f5f5f5; padding-bottom: 100rpx;}
 .about image{ width: 100%;}
 .about .h2{ height: 50rpx; font-weight: bold;}
 
@@ -16,3 +16,59 @@ swiper{ background: #fff; height: 400rpx; padding: 0; text-align: center;}
 .nav_n .left i,.nav_n .middle i{ font-size: 40rpx;}
 .nav_n .left i{ color: #f83f3f;}
 .nav_n .right{ background:#43b1f4; width: 510rpx; float: left;height: 98rpx; line-height: 98rpx; text-align: center; font-size: 30rpx; color: #fff;}
+
+.page{padding: 0 30rpx 120rpx}
+.page .user{height: 150rpx;border-bottom: 1rpx solid #e5e5e5}
+.page .user .img_box{width: 90rpx;height: 90rpx;border-radius: 50%;margin: 30rpx 30rpx 30rpx 0;}
+.page .user .user_img{width: 100%;height: 100%}
+.page .user .mid{margin-top: 40rpx}
+.page .user_name{font-size: 30rpx;color: #333;margin-bottom: 14rpx;font-weight: bold}
+.page .time{font-size: 24rpx;color: #888}
+.page .time span{margin-right: 10rpx}
+.page .attention{width: 110rpx;height: 52rpx;background-color: #fdf1b3;border-radius: 26rpx;text-align: center;line-height: 52rpx;font-size: 26rpx;color: #876948;margin: 45rpx 30rpx}
+.page .attention.on{background-color: #fff;color: #888}
+
+
+.page .box{margin-top: 30rpx}
+.page .box .tit{font-size: 34rpx;color: #333;width: 564rpx;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.page .box .v_box{width: 690rpx;margin: 30rpx 0;}
+.page .box .v_box video{width: 100%;height: 100%}
+.page .box .v_box .img_box{width: 220rpx;height: 220rpx;margin-bottom: 15rpx}
+.page .box .v_box .img_box:not(:nth-child(3n)){margin-right: 15rpx}
+.page .box .v_box .img_box image{width: 100%;height: 100%}
+.page .box .text{font-size: 30rpx;color: #333}
+.page .box .text_r{margin-bottom: 40rpx}
+
+.page .box .correlation{}
+.page .box .correlation_tit{height: 40rpx;font-size: 32rpx;color: #333;font-weight: bold;border-left: 10rpx solid #f9dd50;padding-left: 20rpx}
+.page .box .correlation_tit .color{font-weight: normal;font-size: 28rpx;color: #43b1f4}
+.page .box .correlation_contant{width: 690rpx;padding: 30rpx;box-sizing: border-box;border-radius: 20rpx;box-shadow: 0 0 3rpx 5rpx #f0f0f0;margin-top: 34rpx}
+.page .box .correlation_contant .correlation_img{width: 150rpx;height: 150rpx;border-radius: 5rpx;margin-right: 20rpx}
+.page .box .correlation_contant .correlation_img image{width: 100%;height: 100%}
+.page .box .correlation_contant .mid{width: 440rpx;}
+.page .box .correlation_contant .mid .name{font-size: 28rpx;color: #333;width: 100%;height: 116rpx;}
+.page .box .correlation_contant .mid .price{font-size: 30rpx;color: #fb3131;}
+
+.page .box .comment{margin-top: 60rpx}
+.page .box .comment .comment_list{margin-top: 30rpx}
+.page .box .comment .comment_list .img_box{width: 70rpx;height: 70rpx;border-radius: 50%;}
+.page .box .comment .comment_list .user_img{width: 100%;height: 100%}
+.page .box .comment .comment_list .right{width: 600rpx;margin-top: 20rpx}
+.page .box .comment .comment_list .right .text{font-size: 26rpx;color: #333;text-align: justify}
+.page .box .comment .comment_list .right .text_bg{font-size: 26rpx;text-align: justify;padding: 20rpx;background-color: #f0f0f0;margin-top: 20rpx}
+.page .box .comment .comment_list .right .text_bg .paragraph{margin-bottom: 20rpx;color: #333}
+.page .comment .comment_list .right .text_bg .paragraph .txt_r{margin: 0 10rpx}
+.page .box .comment .comment_list .right .text_bg .look{color: #ffa800}
+
+.bottom_box{position: fixed;left: 0;bottom: 0;height: 100rpx;width: 750rpx;border-top: 1rpx solid #e5e5e5;background-color: #fff}
+.bottom_box input{width: 400rpx;height: 70rpx;border-radius: 35rpx;margin: 15rpx 0 0 30rpx;background-color: #f0f0f0;padding-left: 30rpx;font-size: 30rpx;color: #333}
+.bottom_box .right{width: 240rpx;height: 76rpx;display: flex;justify-content: space-between;font-size: 22rpx;color: #333;margin-right: 30rpx;margin-top: 20rpx}
+
+.footer{position: fixed;left: 0;bottom: 0;width: 750rpx;height: 100rpx;border-top: 1rpx solid #f5f5f5;padding: 0 30rpx;box-sizing: border-box;background-color: #fff}
+.footer .ipt{width: 560rpx;height: 70rpx;background-color: #f0f0f0;border-radius: 35rpx;padding-left: 30rpx;margin-top: 15rpx;font-size: 30rpx;color: #666}
+.btn{height: 100rpx;line-height: 100rpx;font-size: 30rpx;color: #ffa800}
+.no-content{margin-bottom: 100rpx;font-size: 28rpx;display: inline-block;color: #333;position: absolute;left: 45%;margin-top: 40rpx;}
+  /* 通用样式 */
+.fl{float: left}
+.fr{float: right}
+.clf::after{display: block;content: '.';visibility: hidden;opacity: 0;clear: both;height: 0}

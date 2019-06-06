@@ -44,7 +44,7 @@
     flex-flow: row;
     justify-content: space-around;
     color: #353535;
-    font-size: 30rpx;
+    font-size: 32rpx;
     background: #fff;
     margin-top: 30rpx; 
 }
@@ -53,7 +53,7 @@
     color:#353535;    
 }
 .active{
-    font-size: 30rpx;
+    font-size: 34rpx;
     background: url(http://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/active.jpg) no-repeat center bottom ;background-size: 60rpx auto;
 }
 .juzhong{
@@ -105,11 +105,11 @@
 }
 
 .store .s .text .t2{
-  font-size: 26rpx; height:40rpx; overflow: hidden;
+  font-size: 30rpx; height:40rpx; overflow: hidden;
 }
 
 .store .s .text .t3{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 .store .s .text .t3 i{
@@ -157,7 +157,7 @@
 
 .need .n .names {
   font-family: PingFangSC-Regular;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
   line-height: 60rpx;
   margin-right: 10rpx;
@@ -168,7 +168,7 @@
 
 .need .n .date {
   font-family: PingFangSC-Regular;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
   display: flex;
   justify-content: space-between;
@@ -225,17 +225,17 @@
 }
 
 .release .r .text .t1{
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
 }
 
 .release .r .text .t2{
-  font-size: 24rpx;
+  font-size: 32rpx;
   color: #43b1f4;
 }
 
 .release .r .text .t3{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 

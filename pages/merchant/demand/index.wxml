@@ -19,7 +19,65 @@
     </block>
   </view>
 </view>
-<view class='nav_n'>
+
+<view class='page'>
+  <view class='box'>
+    <view class='comment'>
+      <view class='correlation_tit'>
+        <view class='fl'>评论</view>
+        <view class='fr color' bindtap='writeReview'>写评论</view>
+      </view>
+      <view class='no-content' hidden='{{no_comment_hidden}}'>暂无评论</view>
+      <view hidden='{{comment_hidden}}'>
+
+      <view class='comment_list clf' wx:for='{{commentList}}' wx:key='item'>
+        <view class='img_box fl'>
+          <image class='user_img' src='{{avatarRootUrl}}{{item.avatar}}'></image>
+        </view>
+        <view class='fr right'>
+          <view class='top clf'>
+            <view class='fl user_name'>{{item.nickname}}</view>
+            <view class='fr time'>
+              <span>{{item.timeText}}</span>
+              <!-- <span>08:36</span> -->
+            </view>
+          </view>
+          <view class='text' bindtap='replyPlay' data-id='{{item.id}}' data-nickname='{{item.nickname}}'>
+            <view>{{item.content}}</view>
+          </view>
+
+          <view class='text_bg' hidden='{{item.reNull}}'>
+            <block wx:for='{{item.replyList}}' wx:key='item' >
+              <view bindtap='replyDouble' data-comment_id='{{item.comment_id}}' data-reply_id='{{item.id}}' data-nickname='{{item.fromNickname}}'>
+                <view class='paragraph' wx:if='{{item.reply_id}}' >
+                  <span>{{item.fromNickname}}</span>
+                  <span class='txt_r'>回复</span>
+                  <span>{{item.toNickname}}</span>：{{item.content}}
+                </view>
+                <view class='paragraph' wx:else >
+                  <span>{{item.fromNickname}}</span>：{{item.content}}
+                </view>
+              </view>
+              
+            </block>
+
+          </view>
+
+        </view>
+      </view>
+
+    </view>
+      
+    </view>
+  </view>
+</view>
+
+<view class='footer' hidden='{{footer_hidden}}'>
+  <input class='ipt fl' bindconfirm='commentPlay' bindinput='changeContent' bindblur='lostFocus' confirm-type='done' value="{{commentContent}}" focus='{{is_focus}}' placeholder='{{comment_default}}'></input>
+  <view class='btn fr' bindtap='commentPlay'>发布</view>
+</view>
+
+<view class='nav_n' hidden='{{nav_hidden}}'>
   <view class='left' bindtap="showDialog">
     <i class="icon iconfont iconjubao"></i>
     <view class='t'>举报</view>

@@ -75,7 +75,7 @@
 
 .product-list .product-item-wrap .names {
   font-family: PingFangSC-Regular;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
   line-height: 60rpx;
   margin-right: 10rpx;
@@ -86,7 +86,7 @@
 
 .product-list .product-item-wrap .date {
   font-family: PingFangSC-Regular;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 
@@ -112,7 +112,7 @@
 
 .product-list .product-item-wrap .text {
   display: flex;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 

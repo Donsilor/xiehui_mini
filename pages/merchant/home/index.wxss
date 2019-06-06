@@ -25,7 +25,7 @@ display: inline-block;
 .i_about .top .img{ width: 100rpx; height: 100rpx; float: left;}
 .i_about .top .img image{width: 100rpx; height: 100rpx; border-radius: 6rpx;}
 .i_about .top .middle{ width: 430rpx; padding-left: 20rpx; float: left; }
-.i_about .top .middle .tit{font-size: 30rpx; height: 40rpx;overflow: hidden;}
+.i_about .top .middle .tit{font-size: 32rpx; height: 40rpx;overflow: hidden;}
 .i_about .top .middle .tag{ font-size: 24rpx; padding-top: 20rpx; color: #666;}
 .i_about .top .right{ width: 120rpx; float: left; font-size: 24rpx; padding-top: 30rpx;}
 .i_about .top .right span{ border: 1px solid #43b1f4; color: #43b1f4; display: block; text-align: center; height: 50rpx; line-height: 50rpx; border-radius: 30rpx;  }
@@ -43,7 +43,7 @@ display: inline-block;
     line-height: 88rpx;
     display: flex;
     flex-flow: row;
-    font-size: 30rpx;
+    font-size: 32rpx;
     justify-content: space-between;
 }
 .swiper-tab-item{
@@ -61,16 +61,16 @@ swiper{
 .Recommend .box{ width: 315rpx; float: left; padding: 0 20rpx 20rpx 20rpx; }
 .Recommend .box image{ width: 315rpx; height: 300rpx;}
 .Recommend .box .p{ height:135rpx; }
-.Recommend .box .tit{ font-size:24rpx; height: 80rpx; line-height: 40rpx; overflow: hidden;}
+.Recommend .box .tit{ font-size:32rpx; height: 80rpx; line-height: 40rpx; overflow: hidden;}
 .Recommend .box span{ font-size: 24rpx; color: #999;}
 
 .need .box{ padding:35rpx 40rpx; border-bottom: 5rpx solid #f5f5f5; }
-.need .box .tit{ font-size: 28rpx; padding-bottom: 20rpx;}
+.need .box .tit{ font-size: 32rpx; padding-bottom: 20rpx;}
 .need .box .mor image{ width: 30rpx; height: 30rpx; border-radius: 15rpx;}
-.need .box .mor { font-size: 24rpx; color: #666;}
+.need .box .mor { font-size: 28rpx; color: #666;}
 .need .box .mor span{ float: right}
 
-.about{ font-size: 28rpx; padding: 40rpx; line-height: 45rpx;}
+.about{ font-size: 32rpx; padding: 40rpx; line-height: 45rpx;}
 .about image{ width: 100%;}
 .ishidden{display: none}
 ::-webkit-scrollbar{

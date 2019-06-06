@@ -16,7 +16,7 @@
           </button> 
         </view> -->
       </view>
-      <view class='r'>
+      <view class='r' wx:if='{{userInfo.member_switch}}'>
         <view wx:if="{{userInfo.type == 1}}"  bindtap='goOtherPage' data-url='../member/index'>加入会员</view>
         <view wx:else  bindtap='goOtherPage' data-url='../welfare/index'>续费会员</view>
       </view>
@@ -68,7 +68,15 @@
      </view>
    </view>
    <view class='li'>
-     <view hover-class="none" bindtap='goOtherPage' data-url='../welfare/index'>
+     <view hover-class="none" bindtap='goOtherPage' data-url='../comment/index'>
+        <i class='icon iconfont iconpinglun'></i> 
+        <!-- <image src='/images/commentsss@2x.png' style='width:30rpx;height:30rpx;'></image> -->
+        评论回复
+        <span class='fr' style='float:right;color:#ffaa00;font-size:24rpx;' wx:if='{{userInfo.news}}'>{{userInfo.news}}</span>
+     </view>
+   </view>
+   <view class='li' wx:if='{{userInfo.member_switch}}'>
+     <view hover-class="none" bindtap='goOtherPage'  data-url='../welfare/index'>
         <i class='icon iconfont iconxiaofeirenzheng'></i> 会员福利
      </view>
    </view>

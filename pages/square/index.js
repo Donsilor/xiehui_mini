@@ -216,12 +216,11 @@ Page({
       });
   },
 
-
-  gotoServiceDetail (e) {
+  goPage: function (e) {
     let that = this;
-    let _id = e.currentTarget.dataset.id;
+    let _url = e.currentTarget.dataset.url;
     wx.navigateTo({
-      url: '../merchant/service/index?id=' + _id
+      url: _url
     })
   },
 

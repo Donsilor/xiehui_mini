@@ -9,7 +9,7 @@
       <view class='user'>
         <view class='name'>{{member.nickname}}<i>{{member.type_name}}</i></view>
         <view class='mo' wx:if="{{member.office_id}}">{{member.office_name}}</view>
-        <view class='qi' wx:if="{{member.end_time}}">{{member.end_time}}</view>
+        <view class='qi' wx:if="{{member.end_time}}">{{member.end_time}} 到期</view>
       </view>
       <view class='xu' bindtap='goPage' wx:if="{{member.type == 1}}">加入会员</view>
       <view class='xu' bindtap='goPage' wx:else>立即续费</view>
@@ -18,31 +18,31 @@
       <view class='z'>专属4大特权</view>
       <view class='en'>4 EXCLUSIVE PRIVILEGES</view>
       <view class='quan'>
-        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view><image style='width:40rpx;height:40rpx;' src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/fa_icon.png'></image></view>
         <view class='i1'>
-          <view>浔阳江头夜送客</view>
-          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+          <view>查看更多需求</view>
+          <view>普通用户每天免费查看1条需求，协会会员每天可免费查看10条</view>
         </view>
       </view>
       <view class='quan'>
-        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view><image style='width:40rpx;height:40rpx;' src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/fa_icon.png'></image></view>
         <view class='i1'>
-          <view>浔阳江头夜送客</view>
-          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+          <view>双倍积分</view>
+          <view>每日签到，普通用户+1积分，协会会员+2积分</view>
         </view>
       </view>
       <view class='quan'>
-        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view><image style='width:40rpx;height:40rpx;' src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/fa_icon.png'></image></view>
         <view class='i1'>
-          <view>浔阳江头夜送客</view>
-          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+          <view>积分赠送</view>
+          <view>加入会员可获得积分，个人会员+100积分，企业会员+500积分</view>
         </view>
       </view>
       <view class='quan'>
-        <view class='icon iconfont iconchangyonglogo28'></view>
+        <view><image style='width:40rpx;height:40rpx;' src='https://szdbi.oss-cn-shenzhen.aliyuncs.com/xcxkaipin/fa_icon.png'></image></view>
         <view class='i1'>
-          <view>浔阳江头夜送客</view>
-          <view>醉不成欢惨将别，别时茫茫江浸月。忽闻水上琵琶声，主人忘归客不发。</view>
+          <view>专属认证标识</view>
+          <view>店铺拥有企业认证标识（企业会员专享）\t\t\t\t\t\t\t</view>
         </view>
       </view>
     </view>

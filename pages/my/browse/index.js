@@ -24,6 +24,7 @@ Page({
         let _data = response.data.data;
         let _count = 0;
         let _browseList = {};
+        console.log(_data);
         if (_data) {
           _count =  _data.length;
           _browseList =  _data;

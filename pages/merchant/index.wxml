@@ -41,7 +41,7 @@
             <image src='{{ResourceRootUrl}}{{item.logo}}'></image>
           </view>
           <view class='tit_des'>
-            <view class='tit'>{{item.shop_name}}</view>
+            <view class='tit'>{{item.shop_name}}<i wx:if='{{item.type == 3}}'>公司</i></view>
             <view class='des'>{{item.content}}</view>
             <view class='other'><span>{{item.business_distance}}</span>{{item.address_name}} | {{item.enter_name}}</view>
           </view>

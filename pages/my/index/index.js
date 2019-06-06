@@ -97,6 +97,15 @@ Page({
     let _userType = that.data.userInfo.type;
     let _url = e.currentTarget.dataset.url;
     let _type = e.currentTarget.dataset.type;
+    let _member_switch = that.data.userInfo.member_switch;
+    if (!_member_switch) {
+      wx.showToast({
+        title: '暂未开放此功能',
+        icon: 'none',
+        duration: 1000
+      });
+      return false;
+    }
     if (_userType == 1 ) {
         wx.showModal({
           title: '会员提示',

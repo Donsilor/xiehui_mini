@@ -86,17 +86,17 @@
 }
 
 .product-list .product-item-wrap .text .t1{
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
 }
 
 .product-list .product-item-wrap .text .t2{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #43b1f4;
 }
 
 .product-list .product-item-wrap .text .t3{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 

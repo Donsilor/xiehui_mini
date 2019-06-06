@@ -95,7 +95,7 @@
 
 .need .product-list .product-item-wrap .names {
   font-family: PingFangSC-Regular;
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
   line-height: 60rpx;
   margin-right: 10rpx;
@@ -106,7 +106,7 @@
 
 .need .product-list .product-item-wrap .date {
   font-family: PingFangSC-Regular;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
   display: flex;
   justify-content: space-between;
@@ -240,17 +240,17 @@
 }
 
 .release .product-list .product-item-wrap .text .t1{
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
 }
 
 .release .product-list .product-item-wrap .text .t2{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #43b1f4;
 }
 
 .release .product-list .product-item-wrap .text .t3{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 

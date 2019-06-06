@@ -1,5 +1,5 @@
-const ApiRootUrl = 'http://192.168.16.117:88/api/'; // http://www.blog.com:88
-const DomainRootUrl = 'http://192.168.16.117:88'; //http://www.blog.com
+const ApiRootUrl = 'http://192.168.16.114:88/api/'; // http://www.blog.com:88
+const DomainRootUrl = 'http://192.168.16.114:88'; //http://www.blog.com
 const QqmapsdkKey = 'EEHBZ-ELQCI-K4XGR-5WXN7-6PM46-FJBZH';
 
 module.exports = {
@@ -89,4 +89,9 @@ module.exports = {
   MapListUrl: ApiRootUrl + 'map-list', //首页轮播
 
   CitySelectUrl: ApiRootUrl + 'configs/city-select', //获取地区分类
+
+  CommentListUrl: ApiRootUrl + 'comment-list', //评论列表
+  CommentPlayUrl: ApiRootUrl + 'comment-play', //评论
+  CommentReplyPlayUrl: ApiRootUrl + 'comment-reply-play', //回复
+  GetMyCommentsUrl: ApiRootUrl + 'get-my-comments', //收到的评论回复列表
 };

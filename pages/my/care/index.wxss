@@ -79,12 +79,12 @@
 }
 
 .product-list .product-item-wrap .text .t1{
-  font-size: 28rpx;
+  font-size: 32rpx;
   color: #333;
 }
 .product-list .product-item-wrap .text .t1 i{
   width: 60rpx;
-  height: 26rpx;
+  height: 28rpx;
   font-size: 22rpx;
   color: #43b1f4;
   border: 1rpx solid #43b1f4;
@@ -93,12 +93,12 @@
 }
 
 .product-list .product-item-wrap .text .t2{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #43b1f4;
 }
 
 .product-list .product-item-wrap .text .t3{
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #666;
 }
 .product-list .product-item-wrap .text .t3 span{

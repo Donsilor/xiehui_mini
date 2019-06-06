@@ -13,7 +13,7 @@
     </view>
     <view class='menu'>
       <view>
-        <view class='shu'>{{detail.browse_num}}</view>
+        <view class='shu'>{{detail.view_num}}</view>
         <view class='lei'>访问量</view>
       </view>
       <view>

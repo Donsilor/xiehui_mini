@@ -40,7 +40,7 @@
       </view>
     </view>
     <view class='btn'>
-      <button  formType="submit" >发布服务</button>
+      <button  formType="submit" >发布需求</button>
     </view>
   </form>
 </view>

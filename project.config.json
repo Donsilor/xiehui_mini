@@ -15,7 +15,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
-	"appid": "wx7d87d27c5a518d38",
+	"appid": "wx2301f8c662922b99",
 	"projectname": "xiehui",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 26,
+			"current": 27,
 			"list": [
 				{
 					"id": -1,
@@ -68,7 +68,7 @@
 					"id": 3,
 					"name": "发布需求",
 					"pathName": "pages/my/demand/create/index",
-					"query": "id=23",
+					"query": "id=26",
 					"scene": null
 				},
 				{
@@ -131,7 +131,7 @@
 					"id": 12,
 					"name": "需求详情",
 					"pathName": "pages/merchant/demand/index",
-					"query": "",
+					"query": "id=26",
 					"scene": null
 				},
 				{
@@ -229,6 +229,13 @@
 					"id": -1,
 					"name": "搜索",
 					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收到的评论",
+					"pathName": "pages/my/comment/index",
 					"query": "",
 					"scene": null
 				}

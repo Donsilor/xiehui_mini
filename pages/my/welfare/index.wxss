@@ -85,7 +85,7 @@
 }
 .main .cantent .quan{
   display: flex;
-  justify-content: center;  
+  /* justify-content: center;   */
   text-align: left;
   line-height: 40rpx;
 

@@ -1,0 +1,29 @@
+<!--pages/my/comment/index.wxml-->
+<view class='pages'>
+  <view class='box'>
+
+  <block wx:for='{{commentList}}' wx:key='item'>
+    <view class='list clf'>
+      <view class='left fl'>
+        <image src='{{avatarRootUrl}}{{item.avatar}}'></image>
+      </view>
+      <view class='mid fl' bindtap='replyDouble' data-type='{{item.type}}'  data-id='{{item.id}}' data-linked_id='{{item.linked_id}}' data-is_reply='{{item.is_reply}}' data-comment_id='{{item.comment_id}}' data-nickname='{{item.nickname}}'>
+        <view class='name'>{{item.nickname}}</view>
+        <view class='time'>
+          <span wx:if="{{item.type}}">评论了您的需求</span>
+          <span wx:else>回复了您的评论</span>
+          <span>{{item.timeText}}</span>
+        </view>
+        <view class='text' >{{item.content}}</view>
+      </view>
+      <view class='right fl' bindtap='goPage' data-url='../../merchant/demand/index?id={{item.linked_id}}'>{{item.demand_title}}</view>
+    </view>
+
+  </block>
+
+  </view>
+</view>
+<view class='footer' hidden='{{footer_hidden}}'>
+  <input class='ipt fl' bindconfirm='commentPlay' bindinput='changeContent' bindblur='lostFocus' confirm-type='done' value="{{commentContent}}" focus='{{is_focus}}' placeholder='{{comment_default}}'></input>
+  <view class='btn fr' bindtap='commentPlay'>发布</view>
+</view>

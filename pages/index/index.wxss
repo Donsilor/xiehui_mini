@@ -20,12 +20,12 @@ swiper{ background: #fff; height: 253rpx; padding: 45rpx 0; text-align: center;}
 .icon_list .l image{ width: 89rpx; height: 89rpx;}
 .icon_list .l view{ padding: 20rpx 0;}
 .ad_01{ width: 750rpx; height: auto;}
-.ad_01 image{width: 750rpx; height: auto;}
+.ad_01 image{width: 750rpx; height: auto;margin-bottom: 20rpx;margin-top: 20rpx;}
 
 .tit_h2{  padding: 0 40rpx; height:70rpx; line-height: 60rpx; font-size: 34rpx; }
 .Recommend{ padding: 0 20rpx;}
 .Recommend .box{ width: 315rpx; float: left; padding: 0 20rpx 20rpx 20rpx; }
 .Recommend .box image{ width: 315rpx; height: 300rpx;}
 .Recommend .box .p{ height:135rpx; }
-.Recommend .box .tit{ font-size:24rpx; height: 80rpx; line-height: 40rpx; overflow: hidden;}
+.Recommend .box .tit{ font-size:30rpx; height: 80rpx; line-height: 40rpx; overflow: hidden;}
 .Recommend .box span{ font-size: 24rpx; color: #999;}

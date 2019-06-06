@@ -4,7 +4,7 @@
 .user_m .box .top .l{ width: 160rpx; height: 100rpx;float: left;}
 .user_m .box .top .l image{width: 100rpx; height: 100rpx; border-radius: 100rpx;margin-left: 40rpx;}
 .user_m .box .top .m{ width: 390rpx; height: 100rpx;float: left;}
-.user_m .box .top .m .name{ font-size: 30rpx; color: #333;}
+.user_m .box .top .m .name{ font-size: 32rpx; color: #333;}
 .user_m .box .top .m span{ font-size: 22rpx; color: #fff; display:inline-block; background: #43b1f4; padding: 10rpx 20rpx; margin-left: 10rpx; border-radius: 40rpx;}
 .user_m .box .top .m .tel{ font-size: 26rpx; color: #999; }
 .user_m .box .top .m button{ background: #fff;padding: 0rpx; position: absolute;height: 50rpx;line-height: 50rpx;}
@@ -14,7 +14,7 @@
 
 .num{ width: 670rpx;}
 .num .li{ width: 223rpx; float: left; text-align: center;padding-top:70rpx; font-size: 36rpx; color: #333; }
-.num .li span{ font-size: 28rpx; color: #333; }
+.num .li span{ font-size: 30rpx; color: #333; }
 
 .my_icon{ width: 670rpx; height: 208rpx; margin: 20rpx 40rpx;-moz-box-shadow:0px 0px 5px #ccc; -webkit-box-shadow:0px 0px 5px #ccc; box-shadow:0px 0px 5px #ccc;border-radius: 20rpx; }
 .my_icon .li{ width: 167.5rpx; float: left; text-align: center;padding-top: 40rpx; }
@@ -23,13 +23,14 @@
 .my_icon{ width: 670rpx; height: 208rpx; margin: 20rpx 40rpx;-moz-box-shadow:0px 0px 5px #ccc; -webkit-box-shadow:0px 0px 5px #ccc; box-shadow:0px 0px 5px #ccc;border-radius: 20rpx; }
 .my_icon .li{ width: 167.5rpx; float: left; text-align: center;padding-top: 40rpx; }
 .my_icon .li image{ width: 94rpx; height: 94rpx;}
-.my_icon .li span{font-size: 26rpx; color: #333; }
+.my_icon .li span{font-size: 30rpx; color: #333; }
 
-.main{ width: 670rpx; height: 400rpx; margin: 40rpx;-moz-box-shadow:0px 0px 5px #ccc; -webkit-box-shadow:0px 0px 5px #ccc; box-shadow:0px 0px 5px #ccc;border-radius: 20rpx; }
-.main .li{ width: 600rpx;  height: 98rpx; line-height: 98rpx; border-bottom:2rpx solid #eee; margin: 0 auto;font-size: 28rpx; }
+.main{ width: 670rpx; margin: 40rpx;-moz-box-shadow:0px 0px 5px #ccc; -webkit-box-shadow:0px 0px 5px #ccc; box-shadow:0px 0px 5px #ccc;border-radius: 20rpx; }
+.main .li{ width: 600rpx;  height: 98rpx; line-height: 98rpx; border-bottom:2rpx solid #eee; margin: 0 auto;font-size: 32rpx; }
 .main .li i{ font-size: 35rpx;margin-right: 10rpx;}
 .main .li .icon16{ color: #4f7ffb;  }
 .main .li .icon4{ color: #fab241;  }
-.main .li .iconxiaofeirenzheng{ color: #fa5252;  }
-.main .li .iconbangzhuzhongxin{ color: #3cb4f8;  }
+.main .li .iconpinglun{ color: #fa5252;  }
+.main .li .iconxiaofeirenzheng{ color: #3cb4f8;  }
+.main .li .iconbangzhuzhongxin{ color: #4f7ffb;  }
 

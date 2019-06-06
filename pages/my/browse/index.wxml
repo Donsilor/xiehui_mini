@@ -5,7 +5,7 @@
     <view bindtap='emptyAll'>清空</view>    
   </view>
   <view class='content'>
-     <block wx:for='{{browseList}}' wx:if='item'>
+     <block wx:for='{{browseList}}' wx:key='item'>
       <view class='c' bindtap='goDetail' data-url='../../merchant/demand/index?id={{item.demand_id}}'>
         <view class='title'>{{item.demand_title}}</view>
         <view class='collect'>{{item.collectionNum}}人收藏</view>

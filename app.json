@@ -55,6 +55,8 @@
     "pages/my/care/index",
     "pages/my/care/prompt/index",
 
+    "pages/my/comment/index",
+
     "pages/square/index",
     
     "pages/search/index",
